@@ -9,6 +9,46 @@
 
     <!-- TODO: Update blank fragment layout -->
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="183dp"
+        android:layout_height="131dp"
+        android:background="@drawable/rectangle"
+        android:text="L2"
+        android:textSize="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="183dp"
+        android:layout_height="131dp"
+        android:background="@drawable/rectangle"
+        android:text="L3"
+        android:textSize="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.968"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <TextView
+        android:layout_width="178dp"
+        android:layout_height="104dp"
+        android:background="@drawable/rectangle"
+        android:text="L1"
+        android:textSize="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079" />
 
     <CheckBox
         android:id="@+id/deadBot"
@@ -76,7 +116,7 @@
         app:layout_constraintVertical_bias="0.176">
 
         <RadioButton
-            android:id="@+id/Parking"
+            android:id="@+id/L1"
             android:layout_width="195dp"
             android:layout_height="227dp"
             android:layout_gravity="bottom"
@@ -85,7 +125,7 @@
             android:onClick="onRadioButtonClicked" />
 
         <RadioButton
-            android:id="@+id/Deep"
+            android:id="@+id/L2"
             android:layout_width="191dp"
             android:layout_height="233dp"
             android:layout_gravity="bottom"
@@ -94,7 +134,7 @@
             android:onClick="onRadioButtonClicked" />
 
         <RadioButton
-            android:id="@+id/Shallow"
+            android:id="@+id/L3"
             android:layout_width="171dp"
             android:layout_height="225dp"
             android:layout_gravity="bottom"

@@ -25,9 +25,9 @@ public class endgame extends Fragment implements View.OnClickListener {
 
 
     //Endgame Varibles
-    public static int Parking = 0;
-    public static int Shallow = 0;
-    public static int Deep = 0;
+    public static int L1 = 0;
+    public static int L3 = 0;
+    public static int L2 = 0;
     public static int penalty = 0;
     public static int deadBot = 0;
     public static String additionalNotes;

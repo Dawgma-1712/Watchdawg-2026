@@ -85,9 +85,9 @@ public class save extends Fragment implements View.OnClickListener{
 //Code for QR match scouting
 
                 data = MainActivity.teamNumber + "," + MainActivity.matchNumber + ","
-                        /* Auto */   + Auto.leave + "," + Auto.AutoL1 + "," + Auto.AutoL2 + "," + Auto.AutoL3 + "," + Auto.AutoL4 + "," + Auto.AutoBarge + "," + Auto.AutoProcessor + "," + Auto.AutoDeReefed + ","
-                        /* TeleOp */ + MainActivity.playedDefense + "," + MainActivity.defendedOn + ","+ Teleop.TeleopL1 + "," + Teleop.TeleopL2 + "," + Teleop.TeleopL3 + "," + Teleop.TeleopL4 + "," + Teleop.TeleopBarge + "," + Teleop.TeleopProcessor + "," + Teleop.TeleopDeReefed + ","
-                        /* Endgame */+ endgame.Shallow +","+ endgame.Parking +"," + endgame.Deep + ","
+                        /* Auto */   + Auto.Climb + "," + Auto.AutoHub + ","
+                        /* TeleOp */ + MainActivity.playedDefense + "," + MainActivity.defendedOn + ","+ Teleop.TeleopHub + ","
+                        /* Endgame */+ endgame.L1 +","+ endgame.L2 +"," + endgame.L3 + ","
                         /* AddInfo*/ + endgame.penalty + "," + endgame.deadBot + "," + MainActivity.alliance + "," + endgame.additionalNotes  + "," + MainActivity.scoutName;
 
 
@@ -121,26 +121,14 @@ public class save extends Fragment implements View.OnClickListener{
 
                 break;
             case R.id.newMatch2:
-                endgame.Parking = 0;
-                endgame.Shallow = 0;
-                endgame.Deep = 0;
+                endgame.L1 = 0;
+                endgame.L2 = 0;
+                endgame.L3 = 0;
                 endgame.penalty = 0;
                 endgame.deadBot = 0;
-                Teleop.TeleopL1 = 0;
-                Teleop.TeleopL2 = 0;
-                Teleop.TeleopL3 = 0;
-                Teleop.TeleopL4 = 0;
-                Teleop.TeleopBarge = 0;
-                Teleop.TeleopProcessor = 0;
-                Teleop.TeleopDeReefed = 0;
-                Auto.leave = 0;
-                Auto.AutoL1 = 0;
-                Auto.AutoL2 = 0;
-                Auto.AutoL3 = 0;
-                Auto.AutoL4 = 0;
-                Auto.AutoBarge = 0;
-                Auto.AutoDeReefed = 0;
-                Auto.AutoProcessor = 0;
+                Teleop.TeleopHub = 0;
+                Auto.Climb = 0;
+                Auto.AutoHub = 0;
                 Intent intent = new Intent(getActivity(), HomeScreen.class);
 
                 startActivity(intent);
@@ -173,9 +161,9 @@ public class save extends Fragment implements View.OnClickListener{
                 System.out.println(MainActivity.defendedOnByNumber);
                 //code for saving results
                 data += MainActivity.teamNumber + "," + MainActivity.matchNumber + ","
-                        /* Auto */   + Auto.leave + "," + Auto.AutoL1 + "," + Auto.AutoL2 + "," + Auto.AutoL3 + "," + Auto.AutoL4 + "," + Auto.AutoBarge + "," + Auto.AutoProcessor + "," + Auto.AutoDeReefed + ","
-                        /* TeleOp */ + MainActivity.playedDefense + "," + MainActivity.defendedOn + ","+ Teleop.TeleopL1 + "," + Teleop.TeleopL2 + "," + Teleop.TeleopL3 + "," + Teleop.TeleopL4 + "," + Teleop.TeleopBarge + "," + Teleop.TeleopProcessor + "," + Teleop.TeleopDeReefed + ","
-                        /* Endgame */+ endgame.Shallow +","+ endgame.Parking +"," + endgame.Deep + ","
+                        /* Auto */   + Auto.Climb + "," + Auto.AutoHub + ","
+                        /* TeleOp */ + MainActivity.playedDefense + "," + MainActivity.defendedOn + "," + Teleop.TeleopHub + ","
+                        /* Endgame */+ endgame.L1 +","+ endgame.L2 +"," + endgame.L3 + ","
                         /* AddInfo*/ + endgame.penalty + "," + endgame.deadBot + "," + MainActivity.alliance + "," + endgame.additionalNotes  + "," + MainActivity.scoutName;
 
 

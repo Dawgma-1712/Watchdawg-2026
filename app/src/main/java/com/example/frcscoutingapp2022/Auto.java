@@ -17,35 +17,16 @@ public class Auto extends Fragment implements View.OnClickListener {
     //initialize variables
 
     //Initialize upper node text views
-    private TextView AutoL1Text;
-    private TextView AutoL2Text;
-
-    //initialize Middle node text views
-    private TextView AutoL3Text;
-    private TextView AutoL4Text;
-    private TextView AutoBargeText;
-    private TextView AutoDeReefedText;
-    private TextView AutoProcessorText;
+    private TextView AutoHubText;
 
 
     //counter variables
-    private int AutoL1Counter = 0;
-    private int AutoL2Counter = 0;
-    private int AutoL3Counter = 0;
-    private int AutoL4Counter = 0;
-    private int AutoBargeCounter = 0;
-    private int AutoProcessorCounter = 0;
-    private int AutoDeReefedCounter = 0;
+    private int AutoHubCounter = 0;
 
     //Auto Varibles
-    public static int AutoL1 = 0;
-    public static int AutoL2 = 0;
-    public static int AutoL3 = 0;
-    public static int AutoL4 = 0;
-    public static int AutoBarge = 0;
-    public static int AutoProcessor = 0;
-    public static int AutoDeReefed = 0;
-    public static int leave = 0;
+    public static int AutoHub = 0;
+
+    public static int Climb = 0;
 
 
     @SuppressLint("MissingInflatedId")
@@ -54,44 +35,24 @@ public class Auto extends Fragment implements View.OnClickListener {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_auto, container, false);
-        System.out.println(AutoBarge);
+        System.out.println(AutoHub);
 
 
         //Define TextViews
-        AutoL1Text = (TextView) view.findViewById(R.id.AutoL1Counter);
-        AutoL2Text = (TextView) view.findViewById(R.id.AutoL2Counter);
-        AutoL3Text = (TextView) view.findViewById(R.id.AutoL3Counter);
-        AutoL4Text = (TextView) view.findViewById(R.id.AutoL4Counter);
-        AutoBargeText = (TextView) view.findViewById(R.id.AutoBargeCounter);
-        AutoDeReefedText = (TextView) view.findViewById(R.id.AutoDeReefedCounter);
-        AutoProcessorText = (TextView) view.findViewById(R.id.AutoProcessorCounter);
+        AutoHubText = (TextView) view.findViewById(R.id.AutoHubCounter);
 
 
 
         //Upper Row Buttons
-        view.findViewById(R.id.AutoL1Increase).setOnClickListener(this);
-        view.findViewById(R.id.AutoL1Decrease).setOnClickListener(this);
 
-        view.findViewById(R.id.AutoL2Increase).setOnClickListener(this);
-        view.findViewById(R.id.AutoL2Decrease).setOnClickListener(this);
+        view.findViewById(R.id.AutoHubIncrease).setOnClickListener(this);
+        view.findViewById(R.id.AutoHubIncrease5).setOnClickListener(this);
+        view.findViewById(R.id.AutoHubIncrease10).setOnClickListener(this);
+        view.findViewById(R.id.AutoHubDecrease).setOnClickListener(this);
+        view.findViewById(R.id.AutoHubDecrease5).setOnClickListener(this);
+        view.findViewById(R.id.AutoHubDecrease10).setOnClickListener(this);
 
-        //Middle Row Buttons
-        view.findViewById(R.id.AutoL3Increase).setOnClickListener(this);
-        view.findViewById(R.id.AutoL3Decrease).setOnClickListener(this);
-
-        view.findViewById(R.id.AutoL4Increase).setOnClickListener(this);
-        view.findViewById(R.id.AutoL4Decrease).setOnClickListener(this);
-
-        view.findViewById(R.id.AutoBargeIncrease).setOnClickListener(this);
-        view.findViewById(R.id.AutoBargeDecrease).setOnClickListener(this);
-
-        view.findViewById(R.id.AutoDeReefedIncrease).setOnClickListener(this);
-        view.findViewById(R.id.AutoDeReefedDecrease).setOnClickListener(this);
-
-        view.findViewById(R.id.AutoProcessorIncrease).setOnClickListener(this);
-        view.findViewById(R.id.AutoProcessorDecrease).setOnClickListener(this);
-
-        leave =1;
+        Climb =0;
         //Auto
 
         return view;
@@ -101,110 +62,56 @@ public class Auto extends Fragment implements View.OnClickListener {
     public void onClick(View view) {
         switch(view.getId()){
             //+1 to upper cone
-            case R.id.AutoL1Increase:
-                AutoL1Counter++;
-                AutoL1Text.setText(Integer.toString(AutoL1Counter));
-                //MainActivity.editMatchData(0, 0, MainActivity.getButtonData()[0][0] + 1);
-                Auto.AutoL1++;
-                break;
-            case R.id.AutoL1Decrease:
-                if(AutoL1Counter > 0) {
-                    AutoL1Counter--;
-                    AutoL1Text.setText(Integer.toString(AutoL1Counter));
-                    //MainActivity.editMatchData(0, 0, MainActivity.getButtonData()[0][0] - 1);
-                    Auto.AutoL1--;
-                } break;
-
-            case R.id.AutoL2Increase:
-                AutoL2Counter++;
-                AutoL2Text.setText(Integer.toString(AutoL2Counter));
-                //MainActivity.editMatchData(0, 1, MainActivity.getButtonData()[0][1] + 1);\
-                Auto.AutoL2++;
-
-                break;
-
-            case R.id.AutoL2Decrease:
-                if(AutoL2Counter > 0) {
-                    AutoL2Counter--;
-                    AutoL2Text.setText(Integer.toString(AutoL2Counter));
-                    //MainActivity.editMatchData(0, 1, MainActivity.getButtonData()[0][1] - 1);
-                    Auto.AutoL2--;
-                } break;
-
-            case R.id.AutoL3Increase:
-                AutoL3Counter++;
-                AutoL3Text.setText(Integer.toString(AutoL3Counter));
+            case R.id.AutoHubIncrease:
+                AutoHubCounter++;
+                AutoHubText.setText(Integer.toString(AutoHubCounter));
                 //MainActivity.editMatchData(0, 2, MainActivity.getButtonData()[0][2] + 1);
-                Auto.AutoL3++;
+                Auto.AutoHub++;
 
                 break;
 
-            case R.id.AutoL3Decrease:
-                if(AutoL3Counter > 0) {
-                    AutoL3Counter--;
-                    AutoL3Text.setText(Integer.toString(AutoL3Counter));
+            case R.id.AutoHubDecrease:
+                if(AutoHubCounter > 0) {
+                    AutoHubCounter--;
+                    AutoHubText.setText(Integer.toString(AutoHubCounter));
                     //MainActivity.editMatchData(0, 2, MainActivity.getButtonData()[0][2] - 1);
-                    Auto.AutoL3--;
+                    Auto.AutoHub--;
                 } break;
-            case R.id.AutoL4Increase:
-                AutoL4Counter++;
-                AutoL4Text.setText(Integer.toString(AutoL4Counter));
+            case R.id.AutoHubIncrease5:
+                AutoHubCounter+=5;
+                AutoHubText.setText(Integer.toString(AutoHubCounter));
                 //MainActivity.editMatchData(0, 2, MainActivity.getButtonData()[0][2] + 1);
-                Auto.AutoL4++;
+                Auto.AutoHub+=5;
 
                 break;
-
-            case R.id.AutoL4Decrease:
-                if(AutoL4Counter > 0) {
-                    AutoL4Counter--;
-                    AutoL4Text.setText(Integer.toString(AutoL4Counter));
+            case R.id.AutoHubDecrease5:
+                if(AutoHubCounter > 0) {
+                   if(AutoHubCounter<5){ AutoHubCounter=0;
+                       Auto.AutoHub=0;}
+                   else {
+                       AutoHubCounter -= 5;
+                       Auto.AutoHub-=5;
+                   }
+                    AutoHubText.setText(Integer.toString(AutoHubCounter));
                     //MainActivity.editMatchData(0, 2, MainActivity.getButtonData()[0][2] - 1);
-                    Auto.AutoL4--;
                 } break;
-            case R.id.AutoBargeIncrease:
-                AutoBargeCounter++;
-                AutoBargeText.setText(Integer.toString(AutoBargeCounter));
+            case R.id.AutoHubIncrease10:
+                AutoHubCounter+=10;
+                AutoHubText.setText(Integer.toString(AutoHubCounter));
                 //MainActivity.editMatchData(0, 2, MainActivity.getButtonData()[0][2] + 1);
-                Auto.AutoBarge++;
+                Auto.AutoHub+=10;
 
                 break;
-
-            case R.id.AutoBargeDecrease:
-                if(AutoBargeCounter > 0) {
-                    AutoBargeCounter--;
-                    AutoBargeText.setText(Integer.toString(AutoBargeCounter));
+            case R.id.AutoHubDecrease10:
+                if(AutoHubCounter > 0) {
+                    if(AutoHubCounter<10){ AutoHubCounter=0;
+                        Auto.AutoHub=0;}
+                    else {
+                        AutoHubCounter -= 10;
+                        Auto.AutoHub-=10;
+                    }
+                    AutoHubText.setText(Integer.toString(AutoHubCounter));
                     //MainActivity.editMatchData(0, 2, MainActivity.getButtonData()[0][2] - 1);
-                    Auto.AutoBarge--;
-                } break;
-            case R.id.AutoDeReefedIncrease:
-                AutoDeReefedCounter++;
-                AutoDeReefedText.setText(Integer.toString(AutoDeReefedCounter));
-                //MainActivity.editMatchData(0, 2, MainActivity.getButtonData()[0][2] + 1);
-                Auto.AutoDeReefed++;
-
-                break;
-
-            case R.id.AutoDeReefedDecrease:
-                if(AutoDeReefedCounter > 0) {
-                    AutoDeReefedCounter--;
-                    AutoDeReefedText.setText(Integer.toString(AutoDeReefedCounter));
-                    //MainActivity.editMatchData(0, 2, MainActivity.getButtonData()[0][2] - 1);
-                    Auto.AutoDeReefed--;
-                } break;
-            case R.id.AutoProcessorIncrease:
-                AutoProcessorCounter++;
-                AutoProcessorText.setText(Integer.toString(AutoProcessorCounter));
-                //MainActivity.editMatchData(0, 2, MainActivity.getButtonData()[0][2] + 1);
-                Auto.AutoProcessor++;
-
-                break;
-
-            case R.id.AutoProcessorDecrease:
-                if(AutoProcessorCounter > 0) {
-                    AutoProcessorCounter--;
-                    AutoProcessorText.setText(Integer.toString(AutoProcessorCounter));
-                    //MainActivity.editMatchData(0, 2, MainActivity.getButtonData()[0][2] - 1);
-                    Auto.AutoProcessor--;
                 } break;
 
 
@@ -214,15 +121,8 @@ public class Auto extends Fragment implements View.OnClickListener {
 
     public void onResume() {
         super.onResume();
+        AutoHubText.setText(Integer.toString(AutoHubCounter));
 
-        AutoL1Text.setText(Integer.toString(AutoL1Counter));
-        AutoL2Text.setText(Integer.toString(AutoL2Counter));
-        AutoL3Text.setText(Integer.toString(AutoL3Counter));
-        AutoL4Text.setText(Integer.toString(AutoL4Counter));
-
-        AutoBargeText.setText(Integer.toString(AutoBargeCounter));
-        AutoDeReefedText.setText(Integer.toString(AutoDeReefedCounter));
-        AutoProcessorText.setText(Integer.toString(AutoProcessorCounter));
 
 
     }

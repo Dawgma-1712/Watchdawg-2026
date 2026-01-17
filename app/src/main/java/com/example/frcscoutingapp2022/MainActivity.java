@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
         playedDefense = 0;
         defendedOn = 0;
 
-     //   Auto.leave = checked;
+        //   Auto.leave = checked;
 
 
     }
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.LeaveCheckBox:
                 //MainActivity.checkBoxData[16] = checked ? 1 : 0;
-                Auto.leave = checked ? 1 : 0;
+                Auto.Climb = checked ? 1 : 0;
 
                 break;
             case R.id.penalized:
@@ -125,8 +125,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onRadioButtonClicked(View view) {
-       RadioGroup EndgameRadioGroup = (RadioGroup)findViewById(R.id.EndgameRadioGroup);
-       RadioGroup AutoRadioGroup = (RadioGroup)findViewById(R.id.AutoRadioGroup);
+        RadioGroup EndgameRadioGroup = (RadioGroup) findViewById(R.id.EndgameRadioGroup);
+        RadioGroup AutoRadioGroup = (RadioGroup) findViewById(R.id.AutoRadioGroup);
 
         //run all radio buttons
         switch (view.getId()) {
@@ -141,45 +141,39 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
 
-            case R.id.Shallow:
-                if(endgame.Shallow ==1){
+            case R.id.L3:
+                if (endgame.L3 == 1) {
                     EndgameRadioGroup.clearCheck();
-                    endgame.Shallow =0;
+                    endgame.L3 = 0;
                 }
-                else{
-                    endgame.Shallow =1;
-                    endgame.Parking =0;
-                    endgame.Deep=0;
-                System.out.println(endgame.Shallow);
-                System.out.println(endgame.Parking);}
-                break;
-            case R.id.Parking:
-                if(endgame.Parking==1){
-                    EndgameRadioGroup.clearCheck();
-                    endgame.Parking=0;
+                else {
+                    endgame.L3 = 1;
+                    endgame.L1 = 0;
+                    endgame.L2 = 0;
                 }
-                else{
-                    endgame.Shallow =0;
-                    endgame.Parking =1;
-                    endgame.Deep = 0;
-                System.out.println(endgame.Shallow);
-                System.out.println(endgame.Parking);}
-                break;
-            case R.id.Deep:
-                if(endgame.Deep==1){
-                    EndgameRadioGroup.clearCheck();
-                    endgame.Deep=0;
-                }
-                else{
-                    endgame.Shallow =0;
-                    endgame.Parking =0;
-                    endgame.Deep = 1;
-                    System.out.println(endgame.Shallow);
-                    System.out.println(endgame.Parking);}
-                break;
+                    break;
+                    case R.id.L1:
+                        if (endgame.L1 == 1) {
+                            EndgameRadioGroup.clearCheck();
+                            endgame.L1 = 0;
+                        } else {
+                            endgame.L3 = 0;
+                            endgame.L1 = 1;
+                            endgame.L2 = 0;
+                        }
+                        break;
+                        case R.id.L2:
+                        if (endgame.L2 == 1) {
+                            EndgameRadioGroup.clearCheck();
+                            endgame.L2 = 0;
+                        } else {
+                            endgame.L1 = 0;
+                            endgame.L2 = 1;
+                            endgame.L3 = 0;
+                        }
+                        break;
+
         }
 
-        boolean checked = ((RadioButton) view).isChecked();
     }
-
 }

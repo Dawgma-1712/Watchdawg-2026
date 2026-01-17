@@ -4,11 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/teleop_background"
+    android:background="@drawable/background1"
     tools:context=".Teleop">
 
     <!-- TODO: Update blank fragment layout -->
 
+    <TextView
+        android:layout_width="358dp"
+        android:layout_height="149dp"
+        android:text="Hit me with the most shots"
+        android:textSize="50dp"
+        android:fontFamily="@font/helvetica"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.257" />
 
     <CheckBox
         android:id="@+id/playedDefenseCheckBox"
@@ -55,291 +66,109 @@
         app:layout_constraintVertical_bias="0.125" />
 
     <Button
-        android:id="@+id/TeleopL2Decrease"
-        android:layout_width="130dp"
-        android:layout_height="138dp"
-        android:background="@drawable/invisable_rectangle"
-        android:contentDescription="Terrence is Goaded"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.357"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.98" />
-
-    <Button
-        android:id="@+id/TeleopL2Increase"
-        android:layout_width="124dp"
-        android:layout_height="137dp"
-        android:background="@drawable/invisable_rectangle"
-        android:contentDescription="Evan does nothing in dawgma"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.352"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.807" />
-
-    <Button
-        android:id="@+id/TeleopL1Decrease"
-        android:layout_width="130dp"
-        android:layout_height="127dp"
-        android:background="@drawable/invisable_rectangle"
-        android:contentDescription="bring out the whole ocean"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.059"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.969" />
-
-    <Button
-        android:id="@+id/TeleopL1Increase"
-        android:layout_width="129dp"
-        android:layout_height="131dp"
-        android:background="@drawable/invisable_rectangle"
-        android:contentDescription="Thomas is not actually a bum"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.801" />
-
-    <Button
-        android:id="@+id/TeleopL4Decrease"
-        android:layout_width="132dp"
-        android:layout_height="143dp"
-        android:background="@drawable/invisable_rectangle"
-        android:contentDescription="ehh he got the whole dumptruck with him-Thomas"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.981" />
-
-    <TextView
-        android:id="@+id/TeleopL3Counter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/helvetica"
-        android:text="0"
-        android:textColor="@color/gold"
-        android:textSize="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.622"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.881" />
-
-    <Button
-        android:id="@+id/TeleopL4Increase"
-        android:layout_width="129dp"
-        android:layout_height="141dp"
-        android:background="@drawable/invisable_rectangle"
-        android:contentDescription="Something"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.944"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.802" />
-
-    <Button
-        android:id="@+id/TeleopBargeIncrease"
+        android:id="@+id/TeleopHubIncrease"
         android:layout_width="165dp"
         android:layout_height="134dp"
-        android:background="@drawable/invisable_rectangle"
+        android:background="@drawable/rectangle"
         android:contentDescription="Something"
+        android:text="+"
+        android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.839"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.206" />
+        app:layout_constraintVertical_bias="0.447" />
 
     <Button
-        android:id="@+id/TeleopDeReefedIncrease"
+        android:id="@+id/TeleopHubIncrease5"
         android:layout_width="165dp"
         android:layout_height="134dp"
-        android:background="@drawable/invisable_rectangle"
+        android:background="@drawable/rectangle"
         android:contentDescription="Something"
+        android:text="+5"
+        android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.839"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.356" />
+        app:layout_constraintVertical_bias="0.673" />
 
     <Button
-        android:id="@+id/TeleopProcessorIncrease"
+        android:id="@+id/TeleopHubIncrease10"
         android:layout_width="165dp"
         android:layout_height="134dp"
-        android:background="@drawable/invisable_rectangle"
+        android:background="@drawable/rectangle"
         android:contentDescription="Something"
+        android:text="+10"
+        android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.839"
+        app:layout_constraintHorizontal_bias="0.816"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.506" />
+        app:layout_constraintVertical_bias="0.911" />
+
+    <TextView
+        android:id="@+id/TeleopHubCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helvetica"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/gold"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.473" />
 
     <Button
-        android:id="@+id/TeleopBargeDecrease"
+        android:id="@+id/TeleopHubDecrease"
         android:layout_width="165dp"
         android:layout_height="134dp"
-        android:background="@drawable/invisable_rectangle"
+        android:background="@drawable/rectangle"
         android:contentDescription="Something"
+        android:text="-"
+        android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.154"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.205" />
+        app:layout_constraintVertical_bias="0.446" />
 
     <Button
-        android:id="@+id/TeleopDeReefedDecrease"
+        android:id="@+id/TeleopHubDecrease5"
         android:layout_width="165dp"
         android:layout_height="134dp"
-        android:background="@drawable/invisable_rectangle"
+        android:background="@drawable/rectangle"
         android:contentDescription="Something"
+        android:text="-5"
+        android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.154"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.355" />
+        app:layout_constraintVertical_bias="0.673" />
 
     <Button
-        android:id="@+id/TeleopProcessorDecrease"
+        android:id="@+id/TeleopHubDecrease10"
         android:layout_width="165dp"
         android:layout_height="134dp"
-        android:background="@drawable/invisable_rectangle"
+        android:background="@drawable/rectangle"
         android:contentDescription="Something"
+        android:text="-10"
+        android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.154"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.506" />
-
-    <Button
-        android:id="@+id/TeleopL3Decrease"
-        android:layout_width="140dp"
-        android:layout_height="137dp"
-        android:background="@drawable/invisable_rectangle"
-        android:contentDescription="slay"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.663"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.981" />
-
-    <Button
-        android:id="@+id/TeleopL3Increase"
-        android:layout_width="127dp"
-        android:layout_height="132dp"
-        android:background="@drawable/invisable_rectangle"
-        android:contentDescription="Something thats not something"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.663"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.803" />
-
-    <TextView
-        android:id="@+id/TeleopL4Counter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/helvetica"
-        android:text="0"
-        android:textColor="@color/gold"
-        android:textSize="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.877"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.881" />
-
-    <TextView
-        android:id="@+id/TeleopBargeCounter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/helvetica"
-        android:text="0"
-        android:textColor="@color/gold"
-        android:textSize="50dp"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.245" />
-
-    <TextView
-        android:id="@+id/TeleopDeReefedCounter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/helvetica"
-        android:text="0"
-        android:textColor="@color/gold"
-        android:textSize="50dp"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.393" />
-
-    <TextView
-        android:id="@+id/TeleopProcessorCounter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/helvetica"
-        android:text="0"
-        android:textColor="@color/gold"
-        android:textSize="50dp"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.539" />
-
-    <TextView
-        android:id="@+id/TeleopL1Counter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/helvetica"
-        android:text="0"
-        android:textColor="@color/gold"
-        android:textSize="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.134"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.881" />
-
-    <TextView
-        android:id="@+id/TeleopL2Counter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/helvetica"
-        android:text="0"
-        android:textColor="@color/gold"
-        android:textSize="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.377"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.881" />
+        app:layout_constraintVertical_bias="0.911" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

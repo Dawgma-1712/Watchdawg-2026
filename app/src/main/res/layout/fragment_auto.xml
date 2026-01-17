@@ -4,246 +4,114 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/auto_background"
+    android:background="@drawable/background1"
     tools:context=".Auto">
 
     <!-- TODO: Update blank fragment layout -->
 
 
     <TextView
-        android:id="@+id/AutoL3Counter"
-        android:layout_width="60dp"
-        android:layout_height="76dp"
+        android:id="@+id/textView"
+        android:layout_width="500dp"
+        android:layout_height="100dp"
         android:fontFamily="@font/helvetica"
-        android:gravity="center"
-        android:text="0"
-        android:textColor="@color/gold"
+        android:text="Hub Scored"
+        android:textSize="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.361" />
+
+
+
+    <Button
+        android:id="@+id/AutoHubIncrease"
+        android:layout_width="193dp"
+        android:layout_height="115dp"
+        android:background="@drawable/rectangle"
+        android:text="+"
         android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.633"
+        app:layout_constraintHorizontal_bias="0.877"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.875" />
+        app:layout_constraintVertical_bias="0.543" />
 
     <Button
-        android:id="@+id/AutoL2Increase"
-        android:layout_width="126dp"
-        android:layout_height="119dp"
-        android:background="@drawable/invisable_rectangle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.349"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.799" />
-
-
-    <Button
-        android:id="@+id/AutoL1Increase"
-        android:layout_width="134dp"
-        android:layout_height="143dp"
-        android:background="@drawable/invisable_rectangle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.034"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.813" />
-
-    <Button
-        android:id="@+id/AutoL2Decrease"
-        android:layout_width="138dp"
-        android:layout_height="125dp"
-        android:background="@drawable/invisable_rectangle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.36"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.982" />
-
-
-    <TextView
-        android:id="@+id/AutoL1Counter"
-        android:layout_width="60dp"
-        android:layout_height="76dp"
-        android:fontFamily="@font/helvetica"
-        android:gravity="center"
-        android:text="0"
-        android:textColor="@color/gold"
+        android:id="@+id/AutoHubIncrease5"
+        android:layout_width="193dp"
+        android:layout_height="115dp"
+        android:background="@drawable/rectangle"
+        android:text="+5"
         android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintHorizontal_bias="0.877"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.875" />
+        app:layout_constraintVertical_bias="0.723" />
 
     <Button
-        android:id="@+id/AutoL1Decrease"
-        android:layout_width="142dp"
-        android:layout_height="147dp"
-        android:background="@drawable/invisable_rectangle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/AutoL2Counter"
-        android:layout_width="60dp"
-        android:layout_height="76dp"
-        android:fontFamily="@font/helvetica"
-        android:gravity="center"
-        android:text="0"
-        android:textColor="@color/gold"
+        android:id="@+id/AutoHubIncrease10"
+        android:layout_width="193dp"
+        android:layout_height="115dp"
+        android:background="@drawable/rectangle"
+        android:text="+10"
         android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintHorizontal_bias="0.877"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.875" />
+        app:layout_constraintVertical_bias="0.907" />
 
     <Button
-        android:id="@+id/AutoL3Increase"
-        android:layout_width="126dp"
-        android:layout_height="120dp"
-        android:background="@drawable/invisable_rectangle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.656"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.799" />
-
-    <Button
-        android:id="@+id/AutoL4Increase"
-        android:layout_width="126dp"
-        android:layout_height="120dp"
-        android:background="@drawable/invisable_rectangle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.932"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.798" />
-
-    <Button
-        android:id="@+id/AutoBargeDecrease"
+        android:id="@+id/AutoHubDecrease"
         android:layout_width="193dp"
         android:layout_height="115dp"
-        android:background="@drawable/invisable_rectangle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.109"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.203" />
-
-    <Button
-        android:id="@+id/AutoDeReefedDecrease"
-        android:layout_width="193dp"
-        android:layout_height="115dp"
-        android:background="@drawable/invisable_rectangle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.127"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.35" />
-
-    <Button
-        android:id="@+id/AutoProcessorDecrease"
-        android:layout_width="193dp"
-        android:layout_height="115dp"
-        android:background="@drawable/invisable_rectangle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.149"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/AutoBargeIncrease"
-        android:layout_width="193dp"
-        android:layout_height="115dp"
-        android:background="@drawable/invisable_rectangle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.874"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.203" />
-
-    <Button
-        android:id="@+id/AutoDeReefedIncrease"
-        android:layout_width="193dp"
-        android:layout_height="115dp"
-        android:background="@drawable/invisable_rectangle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.874"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.349" />
-
-    <Button
-        android:id="@+id/AutoProcessorIncrease"
-        android:layout_width="193dp"
-        android:layout_height="115dp"
-        android:background="@drawable/invisable_rectangle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.874"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/AutoL3Decrease"
-        android:layout_width="131dp"
-        android:layout_height="127dp"
-        android:background="@drawable/invisable_rectangle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.663"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.982" />
-
-    <Button
-        android:id="@+id/AutoL4Decrease"
-        android:layout_width="131dp"
-        android:layout_height="127dp"
-        android:background="@drawable/invisable_rectangle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.942"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.981" />
-
-    <TextView
-        android:id="@+id/AutoL4Counter"
-        android:layout_width="60dp"
-        android:layout_height="76dp"
-        android:fontFamily="@font/helvetica"
-        android:gravity="center"
-        android:text="0"
-        android:textColor="@color/gold"
+        android:background="@drawable/rectangle"
+        android:text="-"
         android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintHorizontal_bias="0.11"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.875" />
+        app:layout_constraintVertical_bias="0.543" />
+
+    <Button
+        android:id="@+id/AutoHubDecrease5"
+        android:layout_width="193dp"
+        android:layout_height="115dp"
+        android:background="@drawable/rectangle"
+        android:text="-5"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.722" />
+
+    <Button
+        android:id="@+id/AutoHubDecrease10"
+        android:layout_width="193dp"
+        android:layout_height="115dp"
+        android:background="@drawable/rectangle"
+        android:text="-10"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.908" />
 
     <TextView
-        android:id="@+id/AutoBargeCounter"
+        android:id="@+id/AutoHubCounter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/helvetica"
@@ -252,45 +120,15 @@
         android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.239" />
-
-    <TextView
-        android:id="@+id/AutoDeReefedCounter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/helvetica"
-        android:text="0"
-        android:textColor="@color/gold"
-        android:textSize="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.384" />
-
-    <TextView
-        android:id="@+id/AutoProcessorCounter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/helvetica"
-        android:text="0"
-        android:textColor="@color/gold"
-        android:textSize="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.533" />
+        app:layout_constraintVertical_bias="0.566" />
 
     <RadioGroup
         android:id="@+id/AutoRadioGroup"
         android:layout_width="500dp"
-        android:layout_height="50dp"
+        android:layout_height="120dp"
         android:layout_marginBottom="40dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -302,7 +140,7 @@
         <RadioButton
             android:id="@+id/blue"
             android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_height="120dp"
             android:layout_marginLeft="16dp"
             android:layout_weight="1"
             android:background="@color/lightBlue"
@@ -316,17 +154,17 @@
         <CheckBox
             android:id="@+id/LeaveCheckBox"
             android:layout_width="217dp"
-            android:layout_height="50dp"
+            android:layout_height="120dp"
             android:background="@color/white"
             android:button="@null"
-            android:checked="true"
+            android:checked="false"
             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
             android:fontFamily="@font/norwester"
             android:gravity="center"
             android:minWidth="48dp"
             android:minHeight="48dp"
             android:onClick="onCheckBoxClicked"
-            android:text="Leave"
+            android:text="Climb"
             android:textColor="@color/maroon1"
             android:textSize="30dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -339,7 +177,7 @@
         <RadioButton
             android:id="@+id/red"
             android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
             android:background="@color/maroon4"
             android:buttonTint="@color/black"
