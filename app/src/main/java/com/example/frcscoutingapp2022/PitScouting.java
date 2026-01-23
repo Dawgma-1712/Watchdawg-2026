@@ -33,25 +33,29 @@ public class PitScouting extends AppCompatActivity implements View.OnClickListen
     //Varibles
     private static EditText TeamNumPit;
     private static EditText Weight;
-    private static EditText DriveMotors;
-    private static EditText WheelType;
+
+    private static EditText MotorType;
     private static EditText DriveType;
     private static EditText robotLength;
     private static EditText RobotWidth;
-    private static String locationScoringCoral = "";
+    private static String locationClimb;
     private static EditText climbingFeatures;
     private static EditText autoRoutine;
     private static EditText notesOnRobot;
     private static EditText robotName;
 
+    private static int trench;
+    private static int bump;
     //PitScouting varibles
     public static int L1;
     public static int L2;
     public static int L3;
-    public static int L4;
+    public static int autoClimb;
     public static String intakeMethod="";
     public static String locationScoringAlgae="";
     public static String abilityToClimb="";
+
+
 
 
 
@@ -71,15 +75,16 @@ public class PitScouting extends AppCompatActivity implements View.OnClickListen
         //initializing text varibles
         TeamNumPit = (EditText) findViewById(R.id.TeamNumPit);
         Weight = (EditText) findViewById(R.id.Weight);
-        DriveMotors = (EditText) findViewById(R.id.DriveMotors);
+        MotorType = (EditText) findViewById(R.id.MotorType);
         robotLength = (EditText) findViewById(R.id.robotLength);
         RobotWidth = (EditText) findViewById(R.id.RobotWidth);
         climbingFeatures = (EditText) findViewById(R.id.climbingFeatures);
         autoRoutine = (EditText) findViewById(R.id.autoRoutine);
         notesOnRobot = (EditText) findViewById(R.id.notesOnRobot);
-        WheelType = (EditText) findViewById(R.id.WheelType);
         DriveType = (EditText) findViewById(R.id.DriveType);
         robotName = (EditText) findViewById(R.id.robotName);
+
+        locationClimb = "";
 
         iv_output2 = findViewById(R.id.iv_output2);
 
@@ -92,13 +97,13 @@ public class PitScouting extends AppCompatActivity implements View.OnClickListen
         switch(view.getId()){
 
             case R.id.pitScoutingSave:
-                if(L1==1) locationScoringCoral +="L1-";
-                if(L2==1) locationScoringCoral +="L2-";
-                if(L3==1) locationScoringCoral +="L3-";
-                if(L4==1) locationScoringCoral +="L4";
+                if(L1==1) locationClimb +="L1-";
+                if(L2==1) locationClimb +="L2-";
+                if(L3==1) locationClimb +="L3-";
+                if(autoClimb==1) locationClimb +="Auto CLimb";
                 //save QR code
-                data = TeamNumPit.getText().toString() + ","+Weight.getText().toString()+","+DriveMotors.getText().toString()+","+WheelType.getText().toString()+","+DriveType.getText().toString()+","+robotLength.getText().toString()+","+
-                        RobotWidth.getText().toString()+","+ locationScoringCoral+","+ locationScoringAlgae+","+ abilityToClimb+","+ climbingFeatures.getText().toString()+","+
+                data = TeamNumPit.getText().toString() + ","+Weight.getText().toString()+","+MotorType.getText().toString()+","+","+DriveType.getText().toString()+","+robotLength.getText().toString()+","+
+                        RobotWidth.getText().toString()+","+ locationClimb+","+ locationScoringAlgae+","+ abilityToClimb+","+ climbingFeatures.getText().toString()+","+
                         intakeMethod+","+autoRoutine.getText().toString()+","+notesOnRobot.getText().toString()+","+robotName.getText().toString();
 
                 //Initialize multi format writer
@@ -129,9 +134,11 @@ public class PitScouting extends AppCompatActivity implements View.OnClickListen
                 L1=0;
                 L2=0;
                 L3=0;
-                L4=0;
+                trench=0;
+                bump=0;
+                autoClimb=0;
                 intakeMethod="";
-                locationScoringCoral="";
+                locationClimb="";
                 locationScoringAlgae="";
                 abilityToClimb="";
                 startActivity(new Intent(this, HomeScreen.class));
@@ -145,30 +152,30 @@ public class PitScouting extends AppCompatActivity implements View.OnClickListen
 
         // Check which one clicked
         switch (view.getId()) {
-            case R.id.deep:
-                if(abilityToClimb.equals("deep")){
+            case R.id.trench:
+                if(abilityToClimb.equals("trench")){
                     abilityToClimb = "";
                 }
                 else if(abilityToClimb.equals("both")){
-                    abilityToClimb = "shallow";
+                    abilityToClimb = "bump";
                 }
                 else {
-                    if (abilityToClimb.equals("shallow"))
+                    if (abilityToClimb.equals("bump"))
                         abilityToClimb = "both";
-                    else abilityToClimb = "deep";
+                    else abilityToClimb = "trench";
                 }
                 break;
-            case R.id.shallow:
-                if(abilityToClimb.equals("shallow")){
+            case R.id.bump:
+                if(abilityToClimb.equals("bump")){
                     abilityToClimb = "";
                 }
                 else if(abilityToClimb.equals("both")){
-                    abilityToClimb = "deep";
+                    abilityToClimb = "trench";
                 }
                 else {
-                    if (abilityToClimb.equals("deep"))
+                    if (abilityToClimb.equals("trench"))
                         abilityToClimb = "both";
-                    else abilityToClimb = "shallow";
+                    else abilityToClimb = "bump";
                 }
                 break;
             case R.id.ground:
@@ -223,21 +230,21 @@ public class PitScouting extends AppCompatActivity implements View.OnClickListen
                     else locationScoringAlgae = "processor";
                 }
                 break;
-            case R.id.l1:
+            case R.id.L1:
                 if(L1==1) L1=0;
                 else L1=1;
                 break;
-            case R.id.l2:
+            case R.id.L2:
                 if(L2==1) L2=0;
                 else L2=1;
                 break;
-            case R.id.l3:
+            case R.id.L3:
                 if(L3==1) L3=0;
                 else L3=1;
                 break;
-            case R.id.l4:
-                if(L4==1) L4=0;
-                else L4=1;
+            case R.id.autoClimb:
+                if(autoClimb==1) autoClimb=0;
+                else autoClimb=1;
                 break;
 
         }

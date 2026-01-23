@@ -87,9 +87,9 @@
             app:layout_constraintVertical_bias="0.419" />
 
         <CheckBox
-            android:id="@+id/HPintake2"
-            android:layout_width="382dp"
-            android:layout_height="77dp"
+            android:id="@+id/HP"
+            android:layout_width="230dp"
+            android:layout_height="73dp"
             android:background="@drawable/invisable_rectangle"
             android:button="@null"
             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
@@ -124,8 +124,8 @@
 
         <CheckBox
             android:id="@+id/L3teleop"
-            android:layout_width="207dp"
-            android:layout_height="76dp"
+            android:layout_width="138dp"
+            android:layout_height="64dp"
             android:background="@drawable/invisable_rectangle"
             android:button="@null"
             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
@@ -139,15 +139,15 @@
             android:textSize="25dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.875"
+            app:layout_constraintHorizontal_bias="0.835"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.225" />
+            app:layout_constraintVertical_bias="0.19" />
 
         <CheckBox
             android:id="@+id/L1teleop"
-            android:layout_width="207dp"
-            android:layout_height="76dp"
+            android:layout_width="129dp"
+            android:layout_height="60dp"
             android:background="@drawable/invisable_rectangle"
             android:button="@null"
             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
@@ -161,10 +161,10 @@
             android:textSize="25dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.162"
+            app:layout_constraintHorizontal_bias="0.055"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.23" />
+            app:layout_constraintVertical_bias="0.192" />
 
         <CheckBox
             android:id="@+id/Trench"
@@ -190,8 +190,8 @@
 
         <CheckBox
             android:id="@+id/L2teleop"
-            android:layout_width="207dp"
-            android:layout_height="76dp"
+            android:layout_width="144dp"
+            android:layout_height="65dp"
             android:background="@drawable/invisable_rectangle"
             android:button="@null"
             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
@@ -205,15 +205,15 @@
             android:textSize="25dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.53"
+            app:layout_constraintHorizontal_bias="0.401"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.225" />
+            app:layout_constraintVertical_bias="0.192" />
 
         <CheckBox
             android:id="@+id/AutoStartMid"
-            android:layout_width="207dp"
-            android:layout_height="76dp"
+            android:layout_width="121dp"
+            android:layout_height="62dp"
             android:background="@drawable/invisable_rectangle"
             android:button="@null"
             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
@@ -227,15 +227,15 @@
             android:textSize="25dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.53"
+            app:layout_constraintHorizontal_bias="0.484"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.347" />
+            app:layout_constraintVertical_bias="0.327" />
 
         <CheckBox
-            android:id="@+id/GroundIntake"
-            android:layout_width="382dp"
-            android:layout_height="77dp"
+            android:id="@+id/ground"
+            android:layout_width="241dp"
+            android:layout_height="70dp"
             android:background="@drawable/invisable_rectangle"
             android:button="@null"
             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
@@ -256,8 +256,8 @@
 
         <CheckBox
             android:id="@+id/AutoStartLeft"
-            android:layout_width="207dp"
-            android:layout_height="76dp"
+            android:layout_width="134dp"
+            android:layout_height="70dp"
             android:background="@drawable/invisable_rectangle"
             android:button="@null"
             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
@@ -271,15 +271,15 @@
             android:textSize="25dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.112"
+            app:layout_constraintHorizontal_bias="0.126"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.345" />
+            app:layout_constraintVertical_bias="0.328" />
 
         <CheckBox
-            android:id="@+id/L1auto"
-            android:layout_width="208dp"
-            android:layout_height="81dp"
+            android:id="@+id/autoClimb"
+            android:layout_width="129dp"
+            android:layout_height="60dp"
             android:background="@drawable/invisable_rectangle"
             android:button="@null"
             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
@@ -293,10 +293,10 @@
             android:textSize="25dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.177"
+            app:layout_constraintHorizontal_bias="0.055"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.173" />
+            app:layout_constraintVertical_bias="0.159" />
 
         <Button
             android:id="@+id/newActivityPitScouting"
@@ -422,9 +422,9 @@
 
         <EditText
             android:id="@+id/FuelCapacity"
-            android:layout_width="274dp"
-            android:layout_height="169dp"
-            android:layout_marginTop="348dp"
+            android:layout_width="188dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="350dp"
             android:fontFamily="@font/norwester"
             android:gravity="left"
             android:hint="Weight"
@@ -438,10 +438,10 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/DriveMotors"
+            android:id="@+id/MotorType"
             android:layout_width="241dp"
             android:layout_height="54dp"
-            android:layout_marginTop="276dp"
+            android:layout_marginTop="272dp"
             android:fontFamily="@font/norwester"
             android:gravity="center"
             android:hint="Motor Type"
@@ -450,24 +450,7 @@
             android:textColorHint="@color/black"
             android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.18"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <EditText
-            android:id="@+id/DriveMotors"
-            android:layout_width="241dp"
-            android:layout_height="54dp"
-            android:layout_marginTop="276dp"
-            android:fontFamily="@font/norwester"
-            android:gravity="center"
-            android:hint="Motor Type"
-            android:inputType="text"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
-            android:textSize="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.18"
+            app:layout_constraintHorizontal_bias="0.1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -569,8 +552,8 @@
 
         <CheckBox
             android:id="@+id/AutoStartRight"
-            android:layout_width="207dp"
-            android:layout_height="76dp"
+            android:layout_width="130dp"
+            android:layout_height="64dp"
             android:background="@drawable/invisable_rectangle"
             android:button="@null"
             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
@@ -584,10 +567,10 @@
             android:textSize="25dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.922"
+            app:layout_constraintHorizontal_bias="0.9"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.346" />
+            app:layout_constraintVertical_bias="0.327" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
