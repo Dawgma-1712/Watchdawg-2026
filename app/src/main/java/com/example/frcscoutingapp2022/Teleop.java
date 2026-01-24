@@ -34,7 +34,6 @@ public class Teleop extends Fragment implements View.OnClickListener{
 
 
         //Amp buttons Listener
-
         view.findViewById(R.id.TeleopHubIncrease).setOnClickListener(this);
         view.findViewById(R.id.TeleopHubDecrease).setOnClickListener(this);
         view.findViewById(R.id.TeleopHubIncrease5).setOnClickListener(this);
@@ -56,17 +55,18 @@ public class Teleop extends Fragment implements View.OnClickListener{
             case R.id.TeleopHubIncrease:
                 TeleopHubCounter++;
                 TeleopHubText.setText(Integer.toString(TeleopHubCounter));
-                //MainActivity.editMatchData(1, 3, MainActivity.getButtonData()[0][3] + 1);
+                //MainActivity.editMatchData(0, 2, MainActivity.getButtonData()[0][2] + 1);
                 Teleop.TeleopHub++;
-                break;
 
+                break;
             case R.id.TeleopHubDecrease:
                 if(TeleopHubCounter > 0) {
-                    TeleopHubCounter--;
+                        TeleopHubCounter --;
+                        Teleop.TeleopHub--;
+                    }
                     TeleopHubText.setText(Integer.toString(TeleopHubCounter));
-                    //MainActivity.editMatchData(1, 3, MainActivity.getButtonData()[0][3] - 1);
-                    Teleop.TeleopHub--;
-                } break;
+                    //MainActivity.editMatchData(0, 2, MainActivity.getButtonData()[0][2] - 1);
+                 break;
             case R.id.TeleopHubIncrease5:
                 TeleopHubCounter+=5;
                 TeleopHubText.setText(Integer.toString(TeleopHubCounter));

@@ -33,7 +33,7 @@ public class PitScouting extends AppCompatActivity implements View.OnClickListen
     //Varibles
     private static EditText TeamNumPit;
     private static EditText Weight;
-
+    private static EditText Capacity;
     private static EditText MotorType;
     private static EditText DriveType;
     private static EditText robotLength;
@@ -43,7 +43,10 @@ public class PitScouting extends AppCompatActivity implements View.OnClickListen
     private static EditText autoRoutine;
     private static EditText notesOnRobot;
     private static EditText robotName;
-
+    private static int AutoStartLeft;
+    private static int AutoStartMid;
+    private static int AutoStartRight;
+    private static String AutoStart;
     private static int trench;
     private static int bump;
     //PitScouting varibles
@@ -53,7 +56,7 @@ public class PitScouting extends AppCompatActivity implements View.OnClickListen
     public static int autoClimb;
     public static String intakeMethod="";
     public static String locationScoringAlgae="";
-    public static String abilityToClimb="";
+    public static String abilityToMove ="";
 
 
 
@@ -75,6 +78,7 @@ public class PitScouting extends AppCompatActivity implements View.OnClickListen
         //initializing text varibles
         TeamNumPit = (EditText) findViewById(R.id.TeamNumPit);
         Weight = (EditText) findViewById(R.id.Weight);
+        Capacity = (EditText) findViewById(R.id.Capacity);
         MotorType = (EditText) findViewById(R.id.MotorType);
         robotLength = (EditText) findViewById(R.id.robotLength);
         RobotWidth = (EditText) findViewById(R.id.RobotWidth);
@@ -85,6 +89,7 @@ public class PitScouting extends AppCompatActivity implements View.OnClickListen
         robotName = (EditText) findViewById(R.id.robotName);
 
         locationClimb = "";
+        AutoStart = "" ;
 
         iv_output2 = findViewById(R.id.iv_output2);
 
@@ -101,9 +106,12 @@ public class PitScouting extends AppCompatActivity implements View.OnClickListen
                 if(L2==1) locationClimb +="L2-";
                 if(L3==1) locationClimb +="L3-";
                 if(autoClimb==1) locationClimb +="Auto CLimb";
+                if(AutoStartLeft==1) AutoStart +="Left-";
+                if(AutoStartMid==1) AutoStart +="Mid-";
+                if(AutoStartRight==1) AutoStart +="Right-";
                 //save QR code
-                data = TeamNumPit.getText().toString() + ","+Weight.getText().toString()+","+MotorType.getText().toString()+","+","+DriveType.getText().toString()+","+robotLength.getText().toString()+","+
-                        RobotWidth.getText().toString()+","+ locationClimb+","+ locationScoringAlgae+","+ abilityToClimb+","+ climbingFeatures.getText().toString()+","+
+                data = TeamNumPit.getText().toString() + ","+Weight.getText().toString()+","+Capacity.getText().toString()+","+MotorType.getText().toString()+","+","+DriveType.getText().toString()+","+robotLength.getText().toString()+","+
+                        RobotWidth.getText().toString()+","+ locationClimb+","+ locationScoringAlgae+","+ abilityToMove +","+ climbingFeatures.getText().toString()+","+
                         intakeMethod+","+autoRoutine.getText().toString()+","+notesOnRobot.getText().toString()+","+robotName.getText().toString();
 
                 //Initialize multi format writer
@@ -134,13 +142,14 @@ public class PitScouting extends AppCompatActivity implements View.OnClickListen
                 L1=0;
                 L2=0;
                 L3=0;
-                trench=0;
-                bump=0;
+                AutoStartLeft=0;
+                AutoStartMid=0;
+                AutoStartRight=0;
                 autoClimb=0;
                 intakeMethod="";
                 locationClimb="";
                 locationScoringAlgae="";
-                abilityToClimb="";
+                abilityToMove ="";
                 startActivity(new Intent(this, HomeScreen.class));
                 break;
 
@@ -152,30 +161,30 @@ public class PitScouting extends AppCompatActivity implements View.OnClickListen
 
         // Check which one clicked
         switch (view.getId()) {
-            case R.id.trench:
-                if(abilityToClimb.equals("trench")){
-                    abilityToClimb = "";
+            case R.id.Trench:
+                if(abilityToMove.equals("trench")){
+                    abilityToMove = "";
                 }
-                else if(abilityToClimb.equals("both")){
-                    abilityToClimb = "bump";
+                else if(abilityToMove.equals("both")){
+                    abilityToMove = "bump";
                 }
                 else {
-                    if (abilityToClimb.equals("bump"))
-                        abilityToClimb = "both";
-                    else abilityToClimb = "trench";
+                    if (abilityToMove.equals("bump"))
+                        abilityToMove = "both";
+                    else abilityToMove = "trench";
                 }
                 break;
-            case R.id.bump:
-                if(abilityToClimb.equals("bump")){
-                    abilityToClimb = "";
+            case R.id.Bump:
+                if(abilityToMove.equals("bump")){
+                    abilityToMove = "";
                 }
-                else if(abilityToClimb.equals("both")){
-                    abilityToClimb = "trench";
+                else if(abilityToMove.equals("both")){
+                    abilityToMove = "trench";
                 }
                 else {
-                    if (abilityToClimb.equals("trench"))
-                        abilityToClimb = "both";
-                    else abilityToClimb = "bump";
+                    if (abilityToMove.equals("trench"))
+                        abilityToMove = "both";
+                    else abilityToMove = "bump";
                 }
                 break;
             case R.id.ground:
@@ -204,7 +213,7 @@ public class PitScouting extends AppCompatActivity implements View.OnClickListen
                     else intakeMethod = "human player";
                 }
                 break;
-            case R.id.barge:
+            /* case R.id.barge:
                 if(locationScoringAlgae.equals("barge")){
                     locationScoringAlgae = "";
                 }
@@ -229,7 +238,7 @@ public class PitScouting extends AppCompatActivity implements View.OnClickListen
                         locationScoringAlgae = "both";
                     else locationScoringAlgae = "processor";
                 }
-                break;
+                break; */
             case R.id.L1:
                 if(L1==1) L1=0;
                 else L1=1;
@@ -242,11 +251,22 @@ public class PitScouting extends AppCompatActivity implements View.OnClickListen
                 if(L3==1) L3=0;
                 else L3=1;
                 break;
+            case R.id.AutoStartLeft:
+                if(AutoStartLeft==1) AutoStartLeft=0;
+                else AutoStartLeft=1;
+                break;
+            case R.id.AutoStartMid:
+                if(AutoStartMid==1) AutoStartMid=0;
+                else AutoStartMid=1;
+                break;
+            case R.id.AutoStartRight:
+                if(AutoStartRight==1) AutoStartRight=0;
+                else AutoStartRight=1;
+                break;
             case R.id.autoClimb:
                 if(autoClimb==1) autoClimb=0;
                 else autoClimb=1;
                 break;
-
         }
 
 

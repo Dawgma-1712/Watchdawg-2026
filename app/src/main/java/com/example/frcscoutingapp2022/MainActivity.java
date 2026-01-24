@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
     //Defense Varibles
     public static int playedDefense = 0;
     public static int defendedOn = 0;
+    public static int passedFuel = 0;
     public static String defendedOnByNumber = "";
 
 
@@ -75,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
         //defense
         playedDefense = 0;
         defendedOn = 0;
+        passedFuel = 0 ;
 
         //   Auto.leave = checked;
 
@@ -101,7 +103,11 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.defendedOn = checked ? 1 : 0;
 
                 break;
+            case R.id.PassedFuel:
+                //MainActivity.checkBoxData[3] = checked ? 1 : 0;
+                MainActivity.passedFuel = checked ? 1 : 0;
 
+                break;
 
             case R.id.LeaveCheckBox:
                 //MainActivity.checkBoxData[16] = checked ? 1 : 0;

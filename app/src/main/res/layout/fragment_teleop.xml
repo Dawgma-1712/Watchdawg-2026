@@ -10,16 +10,17 @@
     <!-- TODO: Update blank fragment layout -->
 
     <TextView
-        android:layout_width="358dp"
-        android:layout_height="149dp"
-        android:text="Hit me with the most shots"
-        android:textSize="50dp"
+        android:layout_width="465dp"
+        android:layout_height="147dp"
         android:fontFamily="@font/helvetica"
+        android:text="Estimated Shots"
+        android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.257" />
+        app:layout_constraintVertical_bias="0.323" />
 
     <CheckBox
         android:id="@+id/playedDefenseCheckBox"
@@ -44,6 +45,28 @@
         app:layout_constraintVertical_bias="0.125" />
 
     <CheckBox
+        android:id="@+id/PassedFuel"
+        android:layout_width="225dp"
+        android:layout_height="48dp"
+        android:background="@drawable/round_rectangle"
+        android:button="@null"
+        android:contentDescription="I'm as free as a bird now"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+        android:fontFamily="@font/helvetica"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:onClick="onCheckBoxClicked"
+        android:text=" Passed Fuel"
+        android:textColor="@color/maroon1"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.186" />
+
+    <CheckBox
         android:id="@+id/GotDefendedCheckBox"
         android:layout_width="225dp"
         android:layout_height="48dp"
@@ -66,21 +89,6 @@
         app:layout_constraintVertical_bias="0.125" />
 
     <Button
-        android:id="@+id/TeleopHubIncrease"
-        android:layout_width="165dp"
-        android:layout_height="134dp"
-        android:background="@drawable/rectangle"
-        android:contentDescription="Something"
-        android:text="+"
-        android:textSize="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.839"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.447" />
-
-    <Button
         android:id="@+id/TeleopHubIncrease5"
         android:layout_width="165dp"
         android:layout_height="134dp"
@@ -93,7 +101,22 @@
         app:layout_constraintHorizontal_bias="0.839"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.673" />
+        app:layout_constraintVertical_bias="0.7" />
+
+    <Button
+        android:id="@+id/TeleopHubIncrease"
+        android:layout_width="165dp"
+        android:layout_height="134dp"
+        android:background="@drawable/rectangle"
+        android:contentDescription="Something"
+        android:text="+1"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.513" />
 
     <Button
         android:id="@+id/TeleopHubIncrease10"
@@ -105,10 +128,10 @@
         android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintHorizontal_bias="0.839"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.911" />
+        app:layout_constraintVertical_bias="0.905" />
 
     <TextView
         android:id="@+id/TeleopHubCounter"
@@ -123,22 +146,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.473" />
-
-    <Button
-        android:id="@+id/TeleopHubDecrease"
-        android:layout_width="165dp"
-        android:layout_height="134dp"
-        android:background="@drawable/rectangle"
-        android:contentDescription="Something"
-        android:text="-"
-        android:textSize="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.154"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.446" />
+        app:layout_constraintVertical_bias="0.804" />
 
     <Button
         android:id="@+id/TeleopHubDecrease5"
@@ -153,7 +161,22 @@
         app:layout_constraintHorizontal_bias="0.154"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.673" />
+        app:layout_constraintVertical_bias="0.7" />
+
+    <Button
+        android:id="@+id/TeleopHubDecrease"
+        android:layout_width="165dp"
+        android:layout_height="134dp"
+        android:background="@drawable/rectangle"
+        android:contentDescription="Something"
+        android:text="-1"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.513" />
 
     <Button
         android:id="@+id/TeleopHubDecrease10"
@@ -168,7 +191,7 @@
         app:layout_constraintHorizontal_bias="0.154"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.911" />
+        app:layout_constraintVertical_bias="0.906" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

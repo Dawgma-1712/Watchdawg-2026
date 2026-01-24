@@ -86,7 +86,7 @@ public class save extends Fragment implements View.OnClickListener{
 
                 data = MainActivity.teamNumber + "," + MainActivity.matchNumber + ","
                         /* Auto */   + Auto.Climb + "," + Auto.AutoHub + ","
-                        /* TeleOp */ + MainActivity.playedDefense + "," + MainActivity.defendedOn + ","+ Teleop.TeleopHub + ","
+                        /* TeleOp */ + MainActivity.playedDefense + "," + MainActivity.defendedOn +"," + MainActivity.passedFuel + ","+ Teleop.TeleopHub + ","
                         /* Endgame */+ endgame.L1 +","+ endgame.L2 +"," + endgame.L3 + ","
                         /* AddInfo*/ + endgame.penalty + "," + endgame.deadBot + "," + MainActivity.alliance + "," + endgame.additionalNotes  + "," + MainActivity.scoutName;
 
@@ -162,7 +162,7 @@ public class save extends Fragment implements View.OnClickListener{
                 //code for saving results
                 data += MainActivity.teamNumber + "," + MainActivity.matchNumber + ","
                         /* Auto */   + Auto.Climb + "," + Auto.AutoHub + ","
-                        /* TeleOp */ + MainActivity.playedDefense + "," + MainActivity.defendedOn + "," + Teleop.TeleopHub + ","
+                        /* TeleOp */ + MainActivity.playedDefense + "," + MainActivity.defendedOn + ","+ MainActivity.passedFuel + "," + Teleop.TeleopHub + ","
                         /* Endgame */+ endgame.L1 +","+ endgame.L2 +"," + endgame.L3 + ","
                         /* AddInfo*/ + endgame.penalty + "," + endgame.deadBot + "," + MainActivity.alliance + "," + endgame.additionalNotes  + "," + MainActivity.scoutName;
 
