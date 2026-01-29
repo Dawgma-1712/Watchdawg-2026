@@ -40,13 +40,13 @@ public class PitScouting extends AppCompatActivity implements View.OnClickListen
     private static EditText RobotWidth;
     private static String locationClimb;
     private static EditText climbingFeatures;
-    private static EditText autoRoutine;
-    private static EditText notesOnRobot;
+    private static EditText aimPos;
+    private static EditText extra;
     private static EditText robotName;
     private static int AutoStartLeft;
     private static int AutoStartMid;
     private static int AutoStartRight;
-    private static String AutoStart;
+    private static String route;
     private static int trench;
     private static int bump;
     //PitScouting varibles
@@ -83,15 +83,15 @@ public class PitScouting extends AppCompatActivity implements View.OnClickListen
         robotLength = (EditText) findViewById(R.id.robotLength);
         RobotWidth = (EditText) findViewById(R.id.RobotWidth);
         climbingFeatures = (EditText) findViewById(R.id.climbingFeatures);
-        autoRoutine = (EditText) findViewById(R.id.autoRoutine);
-        notesOnRobot = (EditText) findViewById(R.id.notesOnRobot);
+        aimPos = (EditText) findViewById(R.id.route);
+        extra = (EditText) findViewById(R.id.extra);
         DriveType = (EditText) findViewById(R.id.DriveType);
         robotName = (EditText) findViewById(R.id.robotName);
 
         locationClimb = "";
-        AutoStart = "" ;
+        route = "" ;
 
-        iv_output2 = findViewById(R.id.iv_output2);
+        //iv_output2 = findViewById(R.id.iv_output2);
 
 
 
@@ -106,13 +106,13 @@ public class PitScouting extends AppCompatActivity implements View.OnClickListen
                 if(L2==1) locationClimb +="L2-";
                 if(L3==1) locationClimb +="L3-";
                 if(autoClimb==1) locationClimb +="Auto CLimb";
-                if(AutoStartLeft==1) AutoStart +="Left-";
-                if(AutoStartMid==1) AutoStart +="Mid-";
-                if(AutoStartRight==1) AutoStart +="Right-";
+                if(AutoStartLeft==1) route +="Left-";
+                if(AutoStartMid==1) route +="Mid-";
+                if(AutoStartRight==1) route +="Right-";
                 //save QR code
                 data = TeamNumPit.getText().toString() + ","+Weight.getText().toString()+","+Capacity.getText().toString()+","+MotorType.getText().toString()+","+","+DriveType.getText().toString()+","+robotLength.getText().toString()+","+
                         RobotWidth.getText().toString()+","+ locationClimb+","+ locationScoringAlgae+","+ abilityToMove +","+ climbingFeatures.getText().toString()+","+
-                        intakeMethod+","+autoRoutine.getText().toString()+","+notesOnRobot.getText().toString()+","+robotName.getText().toString();
+                        intakeMethod+","+ aimPos.getText().toString()+","+ extra.getText().toString()+","+robotName.getText().toString();
 
                 //Initialize multi format writer
                 MultiFormatWriter writer = new MultiFormatWriter();
@@ -161,7 +161,7 @@ public class PitScouting extends AppCompatActivity implements View.OnClickListen
 
         // Check which one clicked
         switch (view.getId()) {
-            case R.id.Trench:
+            case R.id.trench:
                 if(abilityToMove.equals("trench")){
                     abilityToMove = "";
                 }
@@ -174,7 +174,7 @@ public class PitScouting extends AppCompatActivity implements View.OnClickListen
                     else abilityToMove = "trench";
                 }
                 break;
-            case R.id.Bump:
+            case R.id.bump:
                 if(abilityToMove.equals("bump")){
                     abilityToMove = "";
                 }

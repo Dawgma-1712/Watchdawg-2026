@@ -31,10 +31,27 @@
 <!--            app:layout_constraintStart_toStartOf="parent" />-->
 
         <EditText
+            android:id="@+id/climbingFeatures"
+            android:layout_width="781dp"
+            android:layout_height="212dp"
+            android:layout_marginTop="1412dp"
+            android:fontFamily="@font/norwester"
+            android:gravity="left"
+            android:hint="AimPos"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="23dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.604"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
             android:id="@+id/route"
-            android:layout_width="323dp"
-            android:layout_height="335dp"
-            android:layout_marginTop="1224dp"
+            android:layout_width="709dp"
+            android:layout_height="226dp"
+            android:layout_marginTop="1104dp"
             android:fontFamily="@font/norwester"
             android:gravity="left"
             android:hint="Route"
@@ -43,15 +60,15 @@
             android:textColorHint="@color/black"
             android:textSize="23dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.093"
+            app:layout_constraintHorizontal_bias="0.367"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/Extra_Notes"
+            android:id="@+id/extra"
             android:layout_width="855dp"
             android:layout_height="136dp"
-            android:layout_marginTop="1588dp"
+            android:layout_marginTop="2124dp"
             android:fontFamily="@font/norwester"
             android:gravity="left"
             android:hint="Extra_Notes"
@@ -60,7 +77,7 @@
             android:textColorHint="@color/black"
             android:textSize="23dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.692"
+            app:layout_constraintHorizontal_bias="0.485"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -85,20 +102,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.202" />
-
-        <EditText
-            android:id="@+id/climbingFeatures2"
-            android:layout_width="435dp"
-            android:layout_height="173dp"
-            android:layout_marginTop="1740dp"
-            android:hint="Climbing features"
-            android:inputType="text"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <CheckBox
             android:id="@+id/L3"
@@ -255,7 +258,7 @@
             app:layout_constraintVertical_bias="0.244" />
 
         <CheckBox
-            android:id="@+id/Bump"
+            android:id="@+id/bump"
             android:layout_width="248dp"
             android:layout_height="67dp"
             android:background="@drawable/invisable_rectangle"
@@ -277,7 +280,7 @@
             app:layout_constraintVertical_bias="0.168" />
 
         <CheckBox
-            android:id="@+id/Trench"
+            android:id="@+id/trench"
             android:layout_width="242dp"
             android:layout_height="66dp"
             android:background="@drawable/invisable_rectangle"
@@ -298,6 +301,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.167" />
 
+
         <Button
             android:id="@+id/newActivityPitScouting"
             android:layout_width="386dp"
@@ -306,33 +310,10 @@
             android:textColor="@color/maroon1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.945"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.802" />
-
-
-        <View
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@drawable/watch_dog"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.993"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <ImageView
-            android:id="@+id/iv_output2"
-            android:layout_width="400dp"
-            android:layout_height="400dp"
-            android:layout_marginTop="2328dp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintVertical_bias="0.954" />
 
         <EditText
             android:id="@+id/TeamNumPit"
@@ -455,49 +436,6 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/climbingFeatures"
-            android:layout_width="435dp"
-            android:layout_height="173dp"
-            android:layout_marginTop="2424dp"
-            android:hint="Routes"
-            android:inputType="text"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.279"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <EditText
-            android:id="@+id/autoRoutine"
-            android:layout_width="452dp"
-            android:layout_height="166dp"
-            android:layout_marginTop="2316dp"
-            android:hint="Notes on auto routine"
-            android:inputType="text"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.318"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <EditText
-            android:id="@+id/notesOnRobot"
-            android:layout_width="467dp"
-            android:layout_height="191dp"
-            android:layout_marginTop="1864dp"
-            android:hint="Extra notes"
-            android:inputType="text"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.509"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <EditText
             android:id="@+id/robotName"
             android:layout_width="188dp"
             android:layout_height="49dp"
@@ -514,20 +452,21 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+
         <EditText
-            android:id="@+id/Aim_Pos"
-            android:layout_width="323dp"
-            android:layout_height="335dp"
-            android:layout_marginTop="1228dp"
+            android:id="@+id/aimPos"
+            android:layout_width="781dp"
+            android:layout_height="212dp"
+            android:layout_marginTop="1708dp"
             android:fontFamily="@font/norwester"
             android:gravity="left"
-            android:hint="Aim_Pos"
+            android:hint="AimPos"
             android:inputType="text"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
             android:textSize="23dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.892"
+            app:layout_constraintHorizontal_bias="0.535"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -535,13 +474,12 @@
             android:id="@+id/pitScoutingSave"
             android:layout_width="360dp"
             android:layout_height="148dp"
-            android:layout_marginTop="2104dp"
+            android:layout_marginTop="2428dp"
             android:background="@drawable/invisable_rectangle"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintHorizontal_bias="0.058"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
 
         <CheckBox
             android:id="@+id/AutoStartRight"
