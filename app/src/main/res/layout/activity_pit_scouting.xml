@@ -13,9 +13,9 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/pit_scouting_background"
-        tools:context=".PitScouting">
+        android:layout_height="match_parent">
+<!--        android:background="@drawable/pit_scouting_background"
+        tools:context=".PitScouting"  -->
 
         <!--        <View-->
 <!--            android:id="@+id/PitScoutingDivider1"-->
@@ -31,44 +31,11 @@
 <!--            app:layout_constraintStart_toStartOf="parent" />-->
 
         <EditText
-            android:id="@+id/climbingFeatures"
-            android:layout_width="781dp"
-            android:layout_height="212dp"
-            android:layout_marginTop="1412dp"
-            android:fontFamily="@font/norwester"
-            android:gravity="left"
-            android:hint="AimPos"
-            android:inputType="text"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
-            android:textSize="23dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.604"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <EditText
-            android:id="@+id/route"
-            android:layout_width="709dp"
-            android:layout_height="226dp"
-            android:layout_marginTop="1104dp"
-            android:fontFamily="@font/norwester"
-            android:gravity="left"
-            android:hint="Route"
-            android:inputType="text"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
-            android:textSize="23dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.367"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <EditText
             android:id="@+id/extra"
-            android:layout_width="855dp"
-            android:layout_height="136dp"
-            android:layout_marginTop="2124dp"
+            android:layout_width="524dp"
+            android:layout_height="154dp"
+            android:layout_marginTop="1348dp"
+            android:background="@drawable/rectangle"
             android:fontFamily="@font/norwester"
             android:gravity="left"
             android:hint="Extra_Notes"
@@ -77,7 +44,7 @@
             android:textColorHint="@color/black"
             android:textSize="23dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -85,89 +52,86 @@
             android:id="@+id/HP"
             android:layout_width="230dp"
             android:layout_height="73dp"
-            android:background="@drawable/invisable_rectangle"
+            android:background="@drawable/rectangle"
             android:button="@null"
             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
             android:fontFamily="@font/helvetica"
             android:minWidth="48dp"
             android:minHeight="48dp"
             android:onClick="onCheckBoxClicked"
-            android:paddingTop="82dp"
-            android:paddingRight="76dp"
+            android:text="HP"
             android:textColor="@color/maroon1"
             android:textSize="25dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.883"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.202" />
+            app:layout_constraintVertical_bias="0.317" />
 
         <CheckBox
             android:id="@+id/L3"
             android:layout_width="138dp"
             android:layout_height="64dp"
-            android:background="@drawable/invisable_rectangle"
+            android:background="@drawable/rectangle"
             android:button="@null"
             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
             android:fontFamily="@font/helvetica"
             android:minWidth="48dp"
             android:minHeight="48dp"
             android:onClick="onCheckBoxClicked"
-            android:paddingTop="82dp"
-            android:paddingRight="76dp"
+            android:text="ClimbL3Teleop"
             android:textColor="@color/maroon1"
             android:textSize="25dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.859"
+            app:layout_constraintHorizontal_bias="0.921"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.347" />
+            app:layout_constraintVertical_bias="0.361" />
+
 
         <CheckBox
             android:id="@+id/L1"
             android:layout_width="129dp"
             android:layout_height="60dp"
-            android:background="@drawable/invisable_rectangle"
+            android:background="@drawable/rectangle"
             android:button="@null"
             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
             android:fontFamily="@font/helvetica"
             android:minWidth="48dp"
             android:minHeight="48dp"
             android:onClick="onCheckBoxClicked"
-            android:paddingTop="82dp"
-            android:paddingRight="76dp"
+            android:text="ClimbL1Teleop"
             android:textColor="@color/maroon1"
             android:textSize="25dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.097"
+            app:layout_constraintHorizontal_bias="0.043"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.349" />
+            app:layout_constraintVertical_bias="0.36" />
 
         <CheckBox
             android:id="@+id/L2"
             android:layout_width="144dp"
             android:layout_height="65dp"
-            android:background="@drawable/invisable_rectangle"
+            android:background="@drawable/rectangle"
             android:button="@null"
             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
             android:fontFamily="@font/helvetica"
             android:minWidth="48dp"
             android:minHeight="48dp"
             android:onClick="onCheckBoxClicked"
-            android:paddingTop="82dp"
-            android:paddingRight="76dp"
+            android:text="ClimbL2Teleop"
             android:textColor="@color/maroon1"
             android:textSize="25dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.469"
+            app:layout_constraintHorizontal_bias="0.489"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.348" />
+            app:layout_constraintVertical_bias="0.358" />
 
         <CheckBox
             android:id="@+id/AutoStartMid"
@@ -180,38 +144,36 @@
             android:minWidth="48dp"
             android:minHeight="48dp"
             android:onClick="onCheckBoxClicked"
-            android:paddingTop="82dp"
-            android:paddingRight="76dp"
+            android:text="autostartmid"
             android:textColor="@color/maroon1"
             android:textSize="25dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.475"
+            app:layout_constraintHorizontal_bias="0.71"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.286" />
+            app:layout_constraintVertical_bias="0.175" />
 
         <CheckBox
             android:id="@+id/ground"
             android:layout_width="241dp"
             android:layout_height="70dp"
-            android:background="@drawable/invisable_rectangle"
+            android:background="@drawable/rectangle"
             android:button="@null"
             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
             android:fontFamily="@font/helvetica"
             android:minWidth="48dp"
             android:minHeight="48dp"
             android:onClick="onCheckBoxClicked"
-            android:paddingTop="82dp"
-            android:paddingRight="76dp"
+            android:text="ground"
             android:textColor="@color/maroon1"
             android:textSize="25dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.125"
+            app:layout_constraintHorizontal_bias="0.06"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.203" />
+            app:layout_constraintVertical_bias="0.313" />
 
         <CheckBox
             android:id="@+id/AutoStartLeft"
@@ -224,96 +186,91 @@
             android:minWidth="48dp"
             android:minHeight="48dp"
             android:onClick="onCheckBoxClicked"
-            android:paddingTop="82dp"
-            android:paddingRight="76dp"
+            android:text="autostartleft"
             android:textColor="@color/maroon1"
             android:textSize="25dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintHorizontal_bias="0.227"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.284" />
+            app:layout_constraintVertical_bias="0.175" />
 
         <CheckBox
             android:id="@+id/autoClimb"
-            android:layout_width="129dp"
-            android:layout_height="60dp"
-            android:background="@drawable/invisable_rectangle"
+            android:layout_width="209dp"
+            android:layout_height="104dp"
+            android:background="@drawable/rectangle"
             android:button="@null"
             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
             android:fontFamily="@font/helvetica"
             android:minWidth="48dp"
             android:minHeight="48dp"
             android:onClick="onCheckBoxClicked"
-            android:paddingTop="83dp"
-            android:paddingRight="75dp"
+            android:text="autoclimb"
             android:textColor="@color/maroon1"
             android:textSize="25dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.097"
+            app:layout_constraintHorizontal_bias="0.713"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.244" />
+            app:layout_constraintVertical_bias="0.222" />
 
         <CheckBox
             android:id="@+id/bump"
             android:layout_width="248dp"
             android:layout_height="67dp"
-            android:background="@drawable/invisable_rectangle"
-            android:button="@null"
+            android:background="@drawable/rectangle"
             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
             android:fontFamily="@font/helvetica"
             android:minWidth="48dp"
             android:minHeight="48dp"
             android:onClick="onCheckBoxClicked"
-            android:paddingTop="83dp"
-            android:paddingRight="75dp"
+            android:text="bump"
             android:textColor="@color/maroon1"
             android:textSize="25dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.107"
+            app:layout_constraintHorizontal_bias="0.988"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.168" />
+            app:layout_constraintVertical_bias="0.276" />
 
         <CheckBox
             android:id="@+id/trench"
             android:layout_width="242dp"
             android:layout_height="66dp"
-            android:background="@drawable/invisable_rectangle"
+            android:background="@drawable/rectangle"
             android:button="@null"
             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
             android:fontFamily="@font/helvetica"
             android:minWidth="48dp"
             android:minHeight="48dp"
             android:onClick="onCheckBoxClicked"
-            android:paddingTop="83dp"
-            android:paddingRight="75dp"
+            android:text="trench"
             android:textColor="@color/maroon1"
             android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.057"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.275" />
+
+        <Button
+            android:id="@+id/newActivityPitScouting"
+            android:layout_width="243dp"
+            android:layout_height="111dp"
+            android:background="@drawable/rectangle"
+            android:text="new team"
+            android:textColor="@color/maroon1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.849"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.167" />
-
-
-        <Button
-            android:id="@+id/newActivityPitScouting"
-            android:layout_width="386dp"
-            android:layout_height="150dp"
-            android:background="@drawable/invisable_rectangle"
-            android:textColor="@color/maroon1"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.945"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.954" />
+            app:layout_constraintVertical_bias="0.785" />
 
         <EditText
             android:id="@+id/TeamNumPit"
@@ -324,8 +281,8 @@
             android:gravity="left"
             android:hint="Team Number"
             android:inputType="number"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:textSize="50dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.134"
@@ -337,7 +294,7 @@
             android:id="@+id/RobotWidth"
             android:layout_width="199dp"
             android:layout_height="64dp"
-            android:layout_marginTop="224dp"
+            android:layout_marginTop="364dp"
             android:fontFamily="@font/norwester"
             android:gravity="center"
             android:hint="Robot Width (in)"
@@ -346,7 +303,7 @@
             android:textColorHint="@color/black"
             android:textSize="25dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.758"
+            app:layout_constraintHorizontal_bias="0.869"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -354,7 +311,7 @@
             android:id="@+id/robotLength"
             android:layout_width="196dp"
             android:layout_height="75dp"
-            android:layout_marginTop="116dp"
+            android:layout_marginTop="356dp"
             android:fontFamily="@font/norwester"
             android:gravity="center"
             android:hint="Robot Length (in)"
@@ -363,7 +320,7 @@
             android:textColorHint="@color/black"
             android:textSize="25dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.759"
+            app:layout_constraintHorizontal_bias="0.154"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -371,7 +328,7 @@
             android:id="@+id/DriveType"
             android:layout_width="158dp"
             android:layout_height="50dp"
-            android:layout_marginTop="350dp"
+            android:layout_marginTop="200dp"
             android:fontFamily="@font/norwester"
             android:gravity="center"
             android:hint="DriveType"
@@ -380,15 +337,16 @@
             android:textColorHint="@color/black"
             android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.218"
+            app:layout_constraintHorizontal_bias="0.138"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
 
         <EditText
             android:id="@+id/Weight"
             android:layout_width="126dp"
             android:layout_height="47dp"
-            android:layout_marginTop="204dp"
+            android:layout_marginTop="172dp"
             android:fontFamily="@font/norwester"
             android:gravity="left"
             android:hint="Weight"
@@ -397,7 +355,7 @@
             android:textColorHint="@color/black"
             android:textSize="23dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.243"
+            app:layout_constraintHorizontal_bias="0.814"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -405,16 +363,16 @@
             android:id="@+id/Capacity"
             android:layout_width="188dp"
             android:layout_height="75dp"
-            android:layout_marginTop="350dp"
+            android:layout_marginTop="268dp"
             android:fontFamily="@font/norwester"
             android:gravity="left"
-            android:hint="Weight"
+            android:hint="Capacity"
             android:inputType="number"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
             android:textSize="23dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.793"
+            app:layout_constraintHorizontal_bias="0.873"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -422,7 +380,7 @@
             android:id="@+id/MotorType"
             android:layout_width="241dp"
             android:layout_height="54dp"
-            android:layout_marginTop="272dp"
+            android:layout_marginTop="276dp"
             android:fontFamily="@font/norwester"
             android:gravity="center"
             android:hint="Motor Type"
@@ -431,7 +389,7 @@
             android:textColorHint="@color/black"
             android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintHorizontal_bias="0.121"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -439,7 +397,7 @@
             android:id="@+id/robotName"
             android:layout_width="188dp"
             android:layout_height="49dp"
-            android:layout_marginTop="132dp"
+            android:layout_marginTop="136dp"
             android:fontFamily="@font/norwester"
             android:gravity="left"
             android:hint="Robot Name"
@@ -448,16 +406,16 @@
             android:textColorHint="@color/black"
             android:textSize="23dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.201"
+            app:layout_constraintHorizontal_bias="0.141"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-
         <EditText
             android:id="@+id/aimPos"
-            android:layout_width="781dp"
-            android:layout_height="212dp"
-            android:layout_marginTop="1708dp"
+            android:layout_width="531dp"
+            android:layout_height="213dp"
+            android:layout_marginTop="1060dp"
+            android:background="@drawable/rectangle"
             android:fontFamily="@font/norwester"
             android:gravity="left"
             android:hint="AimPos"
@@ -466,18 +424,19 @@
             android:textColorHint="@color/black"
             android:textSize="23dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.535"
+            app:layout_constraintHorizontal_bias="0.181"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/pitScoutingSave"
-            android:layout_width="360dp"
-            android:layout_height="148dp"
-            android:layout_marginTop="2428dp"
-            android:background="@drawable/invisable_rectangle"
+            android:layout_width="211dp"
+            android:layout_height="76dp"
+            android:layout_marginTop="2104dp"
+            android:background="@drawable/rectangle"
+            android:text="save"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.058"
+            app:layout_constraintHorizontal_bias="0.187"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -492,16 +451,26 @@
             android:minWidth="48dp"
             android:minHeight="48dp"
             android:onClick="onCheckBoxClicked"
-            android:paddingTop="82dp"
-            android:paddingRight="76dp"
+            android:text="autostartright"
             android:textColor="@color/maroon1"
             android:textSize="25dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.885"
+            app:layout_constraintHorizontal_bias="0.236"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.286" />
+            app:layout_constraintVertical_bias="0.221" />
+
+        <ImageView
+            android:id="@+id/iv_output2"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="2272dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

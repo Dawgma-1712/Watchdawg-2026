@@ -39,7 +39,6 @@ public class PitScouting extends AppCompatActivity implements View.OnClickListen
     private static EditText robotLength;
     private static EditText RobotWidth;
     private static String locationClimb;
-    private static EditText climbingFeatures;
     private static EditText aimPos;
     private static EditText extra;
     private static EditText robotName;
@@ -82,8 +81,7 @@ public class PitScouting extends AppCompatActivity implements View.OnClickListen
         MotorType = (EditText) findViewById(R.id.MotorType);
         robotLength = (EditText) findViewById(R.id.robotLength);
         RobotWidth = (EditText) findViewById(R.id.RobotWidth);
-        climbingFeatures = (EditText) findViewById(R.id.climbingFeatures);
-        aimPos = (EditText) findViewById(R.id.route);
+        aimPos = (EditText) findViewById(R.id.aimPos);
         extra = (EditText) findViewById(R.id.extra);
         DriveType = (EditText) findViewById(R.id.DriveType);
         robotName = (EditText) findViewById(R.id.robotName);
@@ -91,7 +89,7 @@ public class PitScouting extends AppCompatActivity implements View.OnClickListen
         locationClimb = "";
         route = "" ;
 
-        //iv_output2 = findViewById(R.id.iv_output2);
+        iv_output2 = findViewById(R.id.iv_output2);
 
 
 
@@ -110,9 +108,9 @@ public class PitScouting extends AppCompatActivity implements View.OnClickListen
                 if(AutoStartMid==1) route +="Mid-";
                 if(AutoStartRight==1) route +="Right-";
                 //save QR code
-                data = TeamNumPit.getText().toString() + ","+Weight.getText().toString()+","+Capacity.getText().toString()+","+MotorType.getText().toString()+","+","+DriveType.getText().toString()+","+robotLength.getText().toString()+","+
-                        RobotWidth.getText().toString()+","+ locationClimb+","+ locationScoringAlgae+","+ abilityToMove +","+ climbingFeatures.getText().toString()+","+
-                        intakeMethod+","+ aimPos.getText().toString()+","+ extra.getText().toString()+","+robotName.getText().toString();
+                data = TeamNumPit.getText().toString() + ","+Weight.getText().toString()+","+Capacity.getText().toString()+","+MotorType.getText().toString()+","+DriveType.getText().toString()+"," +
+                        robotLength.getText().toString()+","+ RobotWidth.getText().toString()+","+ locationClimb+","+ abilityToMove +","+
+                        intakeMethod+","+ aimPos.getText().toString()+","+route+ ","+ extra.getText().toString()+","+robotName.getText().toString();
 
                 //Initialize multi format writer
                 MultiFormatWriter writer = new MultiFormatWriter();
@@ -148,8 +146,8 @@ public class PitScouting extends AppCompatActivity implements View.OnClickListen
                 autoClimb=0;
                 intakeMethod="";
                 locationClimb="";
-                locationScoringAlgae="";
                 abilityToMove ="";
+                route = "" ;
                 startActivity(new Intent(this, HomeScreen.class));
                 break;
 
