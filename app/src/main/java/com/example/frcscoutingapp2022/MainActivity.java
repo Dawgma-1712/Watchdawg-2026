@@ -29,10 +29,12 @@ public class MainActivity extends AppCompatActivity {
     public static String teamNumber;
     public static String matchNumber;
     public static String scoutName;
+    public static String TournamentName;
     public static int alliance = 0;
     public static EditText teamNumText;
     public static EditText matchNumText;
     public static EditText scoutNameText;
+    public static EditText TournamentNameText;
 
     //Varibles we need but I don't know what they do
     public static int[][] buttonData;
@@ -47,7 +49,23 @@ public class MainActivity extends AppCompatActivity {
     public static int passedFuel = 0;
     public static String defendedOnByNumber = "";
 
+// Inside MainActivity.java
 
+    public String getTeamNumberText() {
+        return teamNumText.getText().toString();
+    }
+
+    public String getMatchNumberText() {
+        return matchNumText.getText().toString();
+    }
+
+    public String getScoutNameText() {
+        return scoutNameText.getText().toString();
+    }
+
+    public String getTournamentText() {
+        return TournamentNameText.getText().toString();
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,7 +89,8 @@ public class MainActivity extends AppCompatActivity {
         //Some Set up things
         teamNumText = (EditText) findViewById(R.id.teamNum);
         matchNumText = (EditText) findViewById(R.id.matchNum);
-        scoutNameText = (EditText) findViewById(R.id.name);
+        scoutNameText = (EditText) findViewById(R.id.name2);
+        TournamentNameText = (EditText) findViewById(R.id.name3);
 
         //defense
         playedDefense = 0;

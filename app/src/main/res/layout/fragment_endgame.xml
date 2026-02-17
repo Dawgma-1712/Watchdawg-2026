@@ -4,57 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/endgame_background_button"
+    android:background="@drawable/endgame_background"
     tools:context=".Teleop">
 
     <!-- TODO: Update blank fragment layout -->
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="183dp"
-        android:layout_height="131dp"
-        android:background="@drawable/rectangle"
-        android:text="L2"
-        android:textSize="75dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.071" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="183dp"
-        android:layout_height="131dp"
-        android:background="@drawable/rectangle"
-        android:text="L3"
-        android:textSize="75dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.968"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.07" />
-
-    <TextView
-        android:layout_width="178dp"
-        android:layout_height="104dp"
-        android:background="@drawable/rectangle"
-        android:text="L1"
-        android:textSize="75dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.037"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.079" />
-
     <CheckBox
         android:id="@+id/deadBot"
-        android:layout_width="191dp"
-        android:layout_height="194dp"
-        android:buttonTint="@color/white"
+        android:layout_width="234dp"
+        android:layout_height="253dp"
+        android:buttonTint="@color/black"
         android:fontFamily="@font/helvetica"
         android:gravity="bottom"
 
@@ -62,25 +21,26 @@
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintHorizontal_bias="0.907"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.518" />
 
     <CheckBox
         android:id="@+id/penalized"
-        android:layout_width="182dp"
-        android:layout_height="201dp"
-        android:buttonTint="@color/white"
+        android:layout_width="256dp"
+        android:layout_height="249dp"
+        android:buttonTint="@color/black"
         android:fontFamily="@font/helvetica"
         android:gravity="bottom"
         android:onClick="onCheckBoxClicked"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintHorizontal_bias="0.162"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.495" />
+        app:layout_constraintVertical_bias="0.516" />
 
     <EditText
         android:id="@+id/additionalNotes"
