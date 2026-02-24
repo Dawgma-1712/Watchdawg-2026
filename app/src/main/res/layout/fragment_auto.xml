@@ -12,87 +12,79 @@
 
     <Button
         android:id="@+id/AutoHubIncrease"
-        android:layout_width="193dp"
-        android:layout_height="115dp"
-        android:background="@drawable/rectangle"
-        android:text="+"
+        android:layout_width="178dp"
+        android:layout_height="176dp"
+        android:background="@drawable/invisable_rectangle"
         android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintHorizontal_bias="0.917"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.543" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/AutoHubIncrease5"
-        android:layout_width="193dp"
-        android:layout_height="115dp"
-        android:background="@drawable/rectangle"
-        android:text="+5"
+        android:layout_width="161dp"
+        android:layout_height="163dp"
+        android:background="@drawable/invisable_rectangle"
         android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintHorizontal_bias="0.89"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.723" />
 
     <Button
         android:id="@+id/AutoHubIncrease10"
-        android:layout_width="193dp"
-        android:layout_height="115dp"
-        android:background="@drawable/rectangle"
-        android:text="+10"
+        android:layout_width="171dp"
+        android:layout_height="172dp"
+        android:background="@drawable/invisable_rectangle"
         android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintHorizontal_bias="0.915"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.907" />
+        app:layout_constraintVertical_bias="0.947" />
 
     <Button
         android:id="@+id/AutoHubDecrease"
-        android:layout_width="193dp"
-        android:layout_height="115dp"
-        android:background="@drawable/rectangle"
-        android:text="-"
+        android:layout_width="159dp"
+        android:layout_height="175dp"
+        android:background="@drawable/invisable_rectangle"
         android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.543" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/AutoHubDecrease5"
-        android:layout_width="193dp"
-        android:layout_height="115dp"
-        android:background="@drawable/rectangle"
-        android:text="-5"
+        android:layout_width="164dp"
+        android:layout_height="186dp"
+        android:background="@drawable/invisable_rectangle"
         android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.722" />
+        app:layout_constraintVertical_bias="0.73" />
 
     <Button
         android:id="@+id/AutoHubDecrease10"
-        android:layout_width="193dp"
-        android:layout_height="115dp"
-        android:background="@drawable/rectangle"
-        android:text="-10"
+        android:layout_width="165dp"
+        android:layout_height="168dp"
+        android:background="@drawable/invisable_rectangle"
         android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.908" />
+        app:layout_constraintVertical_bias="0.946" />
 
     <TextView
         android:id="@+id/AutoHubCounter"
@@ -100,14 +92,14 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/helvetica"
         android:text="0"
-        android:textColor="@color/gold"
-        android:textSize="50dp"
+        android:textColor="@color/black"
+        android:textSize="75dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.566" />
+        app:layout_constraintVertical_bias="0.709" />
 
     <RadioGroup
         android:id="@+id/AutoRadioGroup"

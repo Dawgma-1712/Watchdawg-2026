@@ -2,20 +2,19 @@
 
 
 <ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true"
-    tools:layout_editor_absoluteX="1dp"
-    tools:layout_editor_absoluteY="1dp">
-
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fillViewport="true"
+tools:layout_editor_absoluteX="1dp"
+tools:layout_editor_absoluteY="1dp">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-<!--        android:background="@drawable/pit_scouting_background"
-        tools:context=".PitScouting"  -->
+        android:layout_height="match_parent"
+        android:background="@drawable/pit_scouting_background"
+        tools:context=".PitScouting" >
 
         <!--        <View-->
 <!--            android:id="@+id/PitScoutingDivider1"-->
@@ -30,12 +29,13 @@
 <!--            app:layout_constraintHorizontal_bias="0.0"-->
 <!--            app:layout_constraintStart_toStartOf="parent" />-->
 
+
         <EditText
             android:id="@+id/extra"
-            android:layout_width="524dp"
-            android:layout_height="154dp"
-            android:layout_marginTop="1348dp"
-            android:background="@drawable/rectangle"
+            android:layout_width="400dp"
+            android:layout_height="148dp"
+            android:layout_marginTop="2328dp"
+            android:background="@drawable/invisable_rectangle"
             android:fontFamily="@font/norwester"
             android:gravity="left"
             android:hint="Extra_Notes"
@@ -44,15 +44,15 @@
             android:textColorHint="@color/black"
             android:textSize="23dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.487"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <CheckBox
             android:id="@+id/HP"
-            android:layout_width="230dp"
-            android:layout_height="73dp"
-            android:background="@drawable/rectangle"
+            android:layout_width="262dp"
+            android:layout_height="189dp"
+
             android:button="@null"
             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
             android:fontFamily="@font/helvetica"
@@ -61,19 +61,20 @@
             android:onClick="onCheckBoxClicked"
             android:text="HP"
             android:textColor="@color/maroon1"
-            android:textSize="25dp"
+            android:textSize="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.896"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.317" />
+            app:layout_constraintVertical_bias="0.478" />
+
 
         <CheckBox
             android:id="@+id/L3"
-            android:layout_width="138dp"
-            android:layout_height="64dp"
-            android:background="@drawable/rectangle"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:background="@drawable/invisable_rectangle"
             android:button="@null"
             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
             android:fontFamily="@font/helvetica"
@@ -82,20 +83,19 @@
             android:onClick="onCheckBoxClicked"
             android:text="ClimbL3Teleop"
             android:textColor="@color/maroon1"
-            android:textSize="25dp"
+            android:textSize="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.921"
+            app:layout_constraintHorizontal_bias="0.9"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.361" />
-
+            app:layout_constraintVertical_bias="0.627" />
 
         <CheckBox
             android:id="@+id/L1"
-            android:layout_width="129dp"
-            android:layout_height="60dp"
-            android:background="@drawable/rectangle"
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:background="@drawable/invisable_rectangle"
             android:button="@null"
             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
             android:fontFamily="@font/helvetica"
@@ -104,19 +104,19 @@
             android:onClick="onCheckBoxClicked"
             android:text="ClimbL1Teleop"
             android:textColor="@color/maroon1"
-            android:textSize="25dp"
+            android:textSize="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintHorizontal_bias="0.059"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.36" />
+            app:layout_constraintVertical_bias="0.628" />
 
         <CheckBox
             android:id="@+id/L2"
-            android:layout_width="144dp"
-            android:layout_height="65dp"
-            android:background="@drawable/rectangle"
+            android:layout_width="177dp"
+            android:layout_height="200dp"
+            android:background="@drawable/invisable_rectangle"
             android:button="@null"
             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
             android:fontFamily="@font/helvetica"
@@ -125,19 +125,19 @@
             android:onClick="onCheckBoxClicked"
             android:text="ClimbL2Teleop"
             android:textColor="@color/maroon1"
-            android:textSize="25dp"
+            android:textSize="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintHorizontal_bias="0.439"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.358" />
+            app:layout_constraintVertical_bias="0.628" />
 
         <CheckBox
             android:id="@+id/AutoStartMid"
-            android:layout_width="133dp"
-            android:layout_height="104dp"
-            android:background="@drawable/rectangle"
+            android:layout_width="164dp"
+            android:layout_height="176dp"
+            android:background="@drawable/invisable_rectangle"
             android:button="@null"
             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
             android:fontFamily="@font/helvetica"
@@ -146,19 +146,19 @@
             android:onClick="onCheckBoxClicked"
             android:text="autostartmid"
             android:textColor="@color/maroon1"
-            android:textSize="25dp"
+            android:textSize="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.71"
+            app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.175" />
+            app:layout_constraintVertical_bias="0.245" />
 
         <CheckBox
             android:id="@+id/ground"
-            android:layout_width="241dp"
-            android:layout_height="70dp"
-            android:background="@drawable/rectangle"
+            android:layout_width="240dp"
+            android:layout_height="192dp"
+            android:background="@drawable/invisable_rectangle"
             android:button="@null"
             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
             android:fontFamily="@font/helvetica"
@@ -167,19 +167,19 @@
             android:onClick="onCheckBoxClicked"
             android:text="ground"
             android:textColor="@color/maroon1"
-            android:textSize="25dp"
+            android:textSize="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintHorizontal_bias="0.143"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.313" />
+            app:layout_constraintVertical_bias="0.478" />
 
         <CheckBox
             android:id="@+id/AutoStartLeft"
-            android:layout_width="128dp"
-            android:layout_height="109dp"
-            android:background="@drawable/rectangle"
+            android:layout_width="151dp"
+            android:layout_height="170dp"
+            android:background="@drawable/invisable_rectangle"
             android:button="@null"
             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
             android:fontFamily="@font/helvetica"
@@ -188,19 +188,19 @@
             android:onClick="onCheckBoxClicked"
             android:text="autostartleft"
             android:textColor="@color/maroon1"
-            android:textSize="25dp"
+            android:textSize="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.227"
+            app:layout_constraintHorizontal_bias="0.094"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.175" />
+            app:layout_constraintVertical_bias="0.245" />
 
         <CheckBox
             android:id="@+id/autoClimb"
-            android:layout_width="209dp"
-            android:layout_height="104dp"
-            android:background="@drawable/rectangle"
+            android:layout_width="538dp"
+            android:layout_height="150dp"
+            android:background="@drawable/invisable_rectangle"
             android:button="@null"
             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
             android:fontFamily="@font/helvetica"
@@ -209,39 +209,40 @@
             android:onClick="onCheckBoxClicked"
             android:text="autoclimb"
             android:textColor="@color/maroon1"
-            android:textSize="25dp"
+            android:textSize="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.713"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.222" />
+            app:layout_constraintVertical_bias="0.317" />
 
         <CheckBox
             android:id="@+id/bump"
-            android:layout_width="248dp"
-            android:layout_height="67dp"
-            android:background="@drawable/rectangle"
+            android:layout_width="246dp"
+            android:layout_height="149dp"
+            android:background="@drawable/invisable_rectangle"
+            android:button="@null"
             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
             android:fontFamily="@font/helvetica"
             android:minWidth="48dp"
             android:minHeight="48dp"
+
             android:onClick="onCheckBoxClicked"
             android:text="bump"
             android:textColor="@color/maroon1"
-            android:textSize="25dp"
+            android:textSize="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.988"
+            app:layout_constraintHorizontal_bias="0.838"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.276" />
+            app:layout_constraintVertical_bias="0.41" />
 
         <CheckBox
             android:id="@+id/trench"
-            android:layout_width="242dp"
-            android:layout_height="66dp"
-            android:background="@drawable/rectangle"
+            android:layout_width="270dp"
+            android:layout_height="170dp"
+            android:background="@drawable/invisable_rectangle"
             android:button="@null"
             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
             android:fontFamily="@font/helvetica"
@@ -250,51 +251,50 @@
             android:onClick="onCheckBoxClicked"
             android:text="trench"
             android:textColor="@color/maroon1"
-            android:textSize="25dp"
+            android:textSize="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.057"
+            app:layout_constraintHorizontal_bias="0.04"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.275" />
+            app:layout_constraintVertical_bias="0.41" />
+
 
         <Button
-            android:id="@+id/newActivityPitScouting"
-            android:layout_width="243dp"
-            android:layout_height="111dp"
-            android:background="@drawable/rectangle"
-            android:text="new team"
+            android:id="@+id/pitScoutingSave"
+            android:layout_width="500dp"
+            android:layout_height="164dp"
             android:textColor="@color/maroon1"
+            android:background="@drawable/invisable_rectangle"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.849"
+            app:layout_constraintHorizontal_bias="0.517"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.785" />
+            app:layout_constraintVertical_bias="0.943" />
 
         <EditText
             android:id="@+id/TeamNumPit"
             android:layout_width="315dp"
             android:layout_height="76dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="56dp"
             android:fontFamily="@font/norwester"
-            android:gravity="left"
+            android:gravity="center"
             android:hint="Team Number"
             android:inputType="number"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
             android:textSize="50dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.134"
+            app:layout_constraintHorizontal_bias="0.473"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
 
         <EditText
             android:id="@+id/RobotWidth"
             android:layout_width="199dp"
             android:layout_height="64dp"
-            android:layout_marginTop="364dp"
+            android:layout_marginTop="500dp"
             android:fontFamily="@font/norwester"
             android:gravity="center"
             android:hint="Robot Width (in)"
@@ -303,7 +303,7 @@
             android:textColorHint="@color/black"
             android:textSize="25dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.869"
+            app:layout_constraintHorizontal_bias="0.857"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -311,7 +311,7 @@
             android:id="@+id/robotLength"
             android:layout_width="196dp"
             android:layout_height="75dp"
-            android:layout_marginTop="356dp"
+            android:layout_marginTop="492dp"
             android:fontFamily="@font/norwester"
             android:gravity="center"
             android:hint="Robot Length (in)"
@@ -320,7 +320,7 @@
             android:textColorHint="@color/black"
             android:textSize="25dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.154"
+            app:layout_constraintHorizontal_bias="0.175"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -328,7 +328,7 @@
             android:id="@+id/DriveType"
             android:layout_width="158dp"
             android:layout_height="50dp"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="596dp"
             android:fontFamily="@font/norwester"
             android:gravity="center"
             android:hint="DriveType"
@@ -337,42 +337,39 @@
             android:textColorHint="@color/black"
             android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.138"
+            app:layout_constraintHorizontal_bias="0.205"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
 
         <EditText
             android:id="@+id/Weight"
             android:layout_width="126dp"
             android:layout_height="47dp"
-            android:layout_marginTop="172dp"
+            android:layout_marginTop="340dp"
             android:fontFamily="@font/norwester"
-            android:gravity="left"
+            android:gravity="center"
             android:hint="Weight"
             android:inputType="number"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
             android:textSize="23dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.814"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/Capacity"
-            android:layout_width="188dp"
-            android:layout_height="75dp"
-            android:layout_marginTop="268dp"
+            android:layout_width="174dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="420dp"
             android:fontFamily="@font/norwester"
-            android:gravity="left"
+            android:gravity="center"
             android:hint="Capacity"
             android:inputType="number"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
             android:textSize="23dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.873"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -380,7 +377,7 @@
             android:id="@+id/MotorType"
             android:layout_width="241dp"
             android:layout_height="54dp"
-            android:layout_marginTop="276dp"
+            android:layout_marginTop="592dp"
             android:fontFamily="@font/norwester"
             android:gravity="center"
             android:hint="Motor Type"
@@ -389,7 +386,7 @@
             android:textColorHint="@color/black"
             android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.121"
+            app:layout_constraintHorizontal_bias="0.888"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -397,54 +394,54 @@
             android:id="@+id/robotName"
             android:layout_width="188dp"
             android:layout_height="49dp"
-            android:layout_marginTop="136dp"
+            android:layout_marginTop="256dp"
             android:fontFamily="@font/norwester"
-            android:gravity="left"
+            android:gravity="center"
             android:hint="Robot Name"
             android:inputType="text"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
             android:textSize="23dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.141"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/aimPos"
-            android:layout_width="531dp"
-            android:layout_height="213dp"
-            android:layout_marginTop="1060dp"
-            android:background="@drawable/rectangle"
+            android:layout_width="609dp"
+            android:layout_height="89dp"
+            android:layout_marginTop="1708dp"
+            android:background="@drawable/invisable_rectangle"
             android:fontFamily="@font/norwester"
-            android:gravity="left"
+            android:gravity="center"
             android:hint="AimPos"
             android:inputType="text"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
-            android:textSize="23dp"
+            android:textSize="30dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.181"
+            app:layout_constraintHorizontal_bias="0.6"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/pitScoutingSave"
-            android:layout_width="211dp"
-            android:layout_height="76dp"
-            android:layout_marginTop="2104dp"
-            android:background="@drawable/rectangle"
+            android:id="@+id/newActivityPitScouting"
+            android:layout_width="500dp"
+            android:layout_height="174dp"
+            android:layout_marginTop="3068dp"
+            android:background="@drawable/invisable_rectangle"
             android:text="save"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.187"
+            android:textSize="0dp"
+            app:layout_constraintHorizontal_bias="0.515"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <CheckBox
             android:id="@+id/AutoStartRight"
-            android:layout_width="123dp"
-            android:layout_height="104dp"
-            android:background="@drawable/rectangle"
+            android:layout_width="161dp"
+            android:layout_height="158dp"
+            android:background="@drawable/invisable_rectangle"
             android:button="@null"
             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
             android:fontFamily="@font/helvetica"
@@ -453,27 +450,25 @@
             android:onClick="onCheckBoxClicked"
             android:text="autostartright"
             android:textColor="@color/maroon1"
-            android:textSize="25dp"
+            android:textSize="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.236"
+            app:layout_constraintHorizontal_bias="0.923"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.221" />
+            app:layout_constraintVertical_bias="0.247" />
 
         <ImageView
             android:id="@+id/iv_output2"
-            android:layout_width="400dp"
-            android:layout_height="400dp"
-            android:layout_marginTop="2272dp"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_marginTop="2576dp"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.531"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </ScrollView>
-
-
