@@ -15,7 +15,7 @@ Note: We are not planning on expanding to other platforms.
 The WatchDawg Scouting System allows users to:
 * Match Scout - quantitative robot data
 * Pit Scout - qualitative pit scouting data
-* Centralized, back-end data collection via Excel 
+* Centralized, back-end data collection via Firebase or Excel 
 
 Offline System:
 * Fully Usable Offline, Does not need an internet connection
@@ -23,7 +23,7 @@ Offline System:
 * QR codes can be saved to the Amazon Fire's Photos for Bulk Saves & Inputs in Pit Scouting
 
 Easy to use:
-* Updated User Interface, more visually appealing - designed for the 2024 FRC Game, Crescendo
+* Updated User Interface, more visually appealing - designed for the 2026 FRC Game, Rebuilt
 * Intuitive System, on both the app side & the excel side 
 * Integrated with Microsoft Excel to provide automatic match and robot analysis when given data
 
