@@ -7,6 +7,7 @@ It is written in Java using Android Studio, and currently only supports Android.
 * [Match Scouting](https://www.youtube.com/watch?v=9rv-PaQupMs) - YouTube video instructions on match scouting
 * [Pit Scouting](https://www.youtube.com/watch?v=Vkx3Gq3UP6o) - YouTube video instructions on pit scouting
 * [Microsoft Excel](https://www.youtube.com/watch?v=Gi4yMPyN_pw) - Youtube video instructions on microsoft excel
+* [Firebase] - Youtube video instruction on Firebase(video coming soon)
 
 Note: We are not planning on expanding to other platforms.
 
