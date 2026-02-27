@@ -1,4 +1,4 @@
-# FRC Scouting App 2025 - WatchDawg
+# FRC Scouting App 2026 - WatchDawg
 
 WatchDawg is the scouting system developed by FRC Team 1712. This android application was designed to work in venues without a cell connection.
 It is written in Java using Android Studio, and currently only supports Android.
