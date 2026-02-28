@@ -4,9 +4,9 @@ WatchDawg is the scouting system developed by FRC Team 1712. This android applic
 It is written in Java using Android Studio, and currently only supports Android.
 
 * [User Manual](https://github.com/Dawgma-1712/Watchdawg-2026/blob/main/2026%20Dawgma%20Scouting%20User%20Manual.pdf)- contains details regarding setup and use of WatchDawg & the Excel
-* [Match Scouting](https://www.youtube.com/watch?v=9rv-PaQupMs) - YouTube video instructions on match scouting
-* [Pit Scouting](https://www.youtube.com/watch?v=Vkx3Gq3UP6o) - YouTube video instructions on pit scouting
-* [Microsoft Excel](https://www.youtube.com/watch?v=Gi4yMPyN_pw) - Youtube video instructions on microsoft excel
+* [Match Scouting](https://youtu.be/q5CGhMpmiSc) - YouTube video instructions on match scouting
+* [Pit Scouting](https://youtu.be/mQFBFxWWAzU) - YouTube video instructions on pit scouting
+* [Microsoft Excel](https://youtu.be/4gosDodQlmg) - Youtube video instructions on microsoft excel
 * [Firebase] - Youtube video instruction on Firebase(video coming soon)
 
 Note: We are not planning on expanding to other platforms.
