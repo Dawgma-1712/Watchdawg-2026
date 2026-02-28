@@ -30,6 +30,7 @@ Easy to use:
 
 ## System Requirements
 * Android Amazon Fire 7 Tablets (6-7 tablets are recommended)
+* Recommended 6 BaseBall Pitch Counters
 * A Computer with the latest Microsoft Excel installed
 * A QR code scanner
 * The app downloaded either through Android Studio using the Github release or the the Amazon Store (Link Coming Soon)
@@ -45,10 +46,10 @@ Please check if you have the required systems before proceeding:
 
 ## Future Goals
 * Port to other android systems - compatible with a larger platform of android devices
+* Get DataDawg released (firebase)
 
 ## Documentation and Files
 
 [User Manual](https://github.com/Dawgma-1712/Watchdawg-2026/blob/main/2026%20Dawgma%20Scouting%20User%20Manual.pdf)
-[Amazon Store](https://www.amazon.com/Dawgma-Robotics-WatchDawg/dp/B09VMZZ6FL/ref=sr_1_1?crid=3VO7RU5EHGVY9&dib=eyJ2IjoiMSJ9.sal-Duc88BgaLIBymz44tfnoCWjgIgh1TddOblRr_6Y-Z1l6ukUKQeJgBd_UUvDMis28NAcrShkP2D-j77RsK9jtocBE-9apfar3COkRDxFPL-UUJmJqFiZ0lQ9QomZXsNH7b3lAueTpa8Hw-zFN5m1GebULMRPxz9dxpZQaIpqQMZDmlq0te-K8eHOr6MOJAjec36bTYrOTetMupGcBALIinDXJZRq0mgOxFULxy9MN0oc0E2faJagk0MwW2aaT0vMz2v1vK0VYFA0AuiZPJPGh5mX-vQMbFYNuUKOQk0_FWcFL6FVzJDsiYtm0jHVnULWLMhqS7Z5J8RzTNM0FJDNhG8NGnhx7z_eUFuPNtBv6mrThNBm-JRdk4fpAOO-8whMsuYieZm9FyrZkZSt4T8tARxkUaocFuzgHt5Ban-hlrDFR3JbDebkbH8ROZmSr.dB83ZtGptPwYySN8mp37AxeGcU_WB8QZJrx1TEEHxOg&dib_tag=se&keywords=dawgma&qid=1740859854&s=mobile-apps&sprefix=dawgma%2Cmobile-apps%2C89&sr=1-1)
 [Spreadsheet](https://github.com/Dawgma-1712/Watchdawg-2025/blob/7fe53a4d2e9d09c23cb34443296eda60a44f8986/2025WATCHDAWG_Post_Bensalem.xlsm)
-[Match Strategy Sheet](https://github.com/Dawgma-1712/Watchdawg-2025/blob/b7dbba1a3ad4e020d0530285126b897ce47344f5/MatchStrategySheet2025.docx)
+[Match Strategy Sheet](https://github.com/Dawgma-1712/Watchdawg-2026/blob/4a8b4bec99ea6cd3af7333ef0466d8f26e8f34c6/MatchStrategySheet2026.docx)
