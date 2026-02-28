@@ -72,7 +72,7 @@ public class save extends Fragment implements View.OnClickListener {
                     e.printStackTrace();
                 }
                 // Data string updated with Tournament Number for the 2026 season
-                data = GlobalVariables.getTournamentNum() + "," + MainActivity.teamNumber + "," + MainActivity.matchNumber + ","
+                data = /* GlobalVariables.getTournamentNum() + "," + */ MainActivity.teamNumber + "," + MainActivity.matchNumber + ","
                         /* Auto */   + Auto.Climb + "," + Auto.AutoHub + ","
                         /* TeleOp */ + MainActivity.playedDefense + "," + MainActivity.defendedOn + "," + MainActivity.passedFuel + "," + Teleop.TeleopHub + ","
                         /* Endgame */ + endgame.L1 + "," + endgame.L2 + "," + endgame.L3 + ","
