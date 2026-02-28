@@ -7,7 +7,6 @@ It is written in Java using Android Studio, and currently only supports Android.
 * [Match Scouting](https://youtu.be/q5CGhMpmiSc) - YouTube video instructions on match scouting
 * [Pit Scouting](https://youtu.be/mQFBFxWWAzU) - YouTube video instructions on pit scouting
 * [Microsoft Excel](https://youtu.be/4gosDodQlmg) - Youtube video instructions on microsoft excel
-* [Firebase] - Youtube video instruction on Firebase(video coming soon)
 
 Note: We are not planning on expanding to other platforms.
 
@@ -45,8 +44,7 @@ Please check if you have the required systems before proceeding:
 4. Follow the instruction manual, or our tutorial videos linked above.
 
 ## Future Goals
-* Port to other android systems - compatible with a larger platform of android devices
-* Get DataDawg released (firebase)
+* We are Planning to move WatchDawg away from Excel and we are moving to a Web Data-Base system run on Firebase. This project will be called Datadawg, for all you avid WatchDawg followers prepare for major changes and improvements to data storage and data proccessing. 2027 will be an exciting year for WatchDawg so make sure keep your eye out.
 
 ## Documentation and Files
 
