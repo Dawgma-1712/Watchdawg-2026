@@ -51,5 +51,5 @@ Please check if you have the required systems before proceeding:
 ## Documentation and Files
 
 [User Manual](https://github.com/Dawgma-1712/Watchdawg-2026/blob/main/2026%20Dawgma%20Scouting%20User%20Manual.pdf)
-[Spreadsheet](https://github.com/Dawgma-1712/Watchdawg-2025/blob/7fe53a4d2e9d09c23cb34443296eda60a44f8986/2025WATCHDAWG_Post_Bensalem.xlsm)
+[Spreadsheet](https://github.com/Dawgma-1712/Watchdawg-2026/blob/fc0c1a359a25e3279f05bf239815107cb3ac6539/2026%20Excel.xlsm)
 [Match Strategy Sheet](https://github.com/Dawgma-1712/Watchdawg-2026/blob/4a8b4bec99ea6cd3af7333ef0466d8f26e8f34c6/MatchStrategySheet2026.docx)
